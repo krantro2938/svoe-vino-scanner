@@ -1,0 +1,58 @@
+{
+  "selection": "same first100 validation per scene; local gate and DINO projection selected without test use",
+  "public": [
+    {
+      "image": "019c68d0.jpg",
+      "slug": "pino-nuar-2025",
+      "method": "ocr",
+      "latency_ms": 2248.33
+    },
+    {
+      "image": "02eef911.webp",
+      "slug": "massandra-muskatel-belyy-belye-sorta-vinograda-beloe-sladkoe-16",
+      "method": "ocr",
+      "latency_ms": 2502.86
+    },
+    {
+      "image": "096ca74e.jpg",
+      "slug": "kuban-vino-aristov-kyuve-aleksandr-millezimato-shardone-beloe-ekstra-bryut-12",
+      "method": "ocr",
+      "latency_ms": 2522.94
+    }
+  ],
+  "summary": {
+    "all": {
+      "correct": 184,
+      "total": 200,
+      "accuracy": 0.92,
+      "methods": {
+        "dinov2": 38,
+        "local_features": 162
+      },
+      "p50_ms": 97.3,
+      "p95_ms": 177.41
+    },
+    "single_reference": {
+      "correct": 96,
+      "total": 100,
+      "accuracy": 0.96,
+      "methods": {
+        "dinov2": 21,
+        "local_features": 79
+      },
+      "p50_ms": 110.86,
+      "p95_ms": 188.51
+    },
+    "center_target_three_bottles": {
+      "correct": 88,
+      "total": 100,
+      "accuracy": 0.88,
+      "methods": {
+        "dinov2": 17,
+        "local_features": 83
+      },
+      "p50_ms": 88.76,
+      "p95_ms": 163.32
+    }
+  }
+}

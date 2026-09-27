@@ -1,0 +1,38 @@
+{
+  "selection": "all validation; RootSIFT strong gate, DINO fallback when side-object routing is false, center visual otherwise",
+  "test_re_evaluated": false,
+  "routing_audit": {
+    "side_objects": 70,
+    "neural": 130
+  },
+  "summary": {
+    "all": {
+      "count": 1332,
+      "correct": 1280,
+      "accuracy": 0.960960960960961,
+      "methods": {
+        "dinov2": 130,
+        "local_features": 1132,
+        "visual": 70
+      }
+    },
+    "single_reference": {
+      "count": 888,
+      "correct": 863,
+      "accuracy": 0.9718468468468469,
+      "methods": {
+        "dinov2": 130,
+        "local_features": 758
+      }
+    },
+    "center_target_three_bottles": {
+      "count": 444,
+      "correct": 417,
+      "accuracy": 0.9391891891891891,
+      "methods": {
+        "local_features": 374,
+        "visual": 70
+      }
+    }
+  }
+}

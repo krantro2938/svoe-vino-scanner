@@ -1,0 +1,33 @@
+{
+  "archive_volumes": [
+    "prod-svoe-vino-strapi.part1.rar",
+    "prod-svoe-vino-strapi.part2.rar",
+    "prod-svoe-vino-strapi.part3.rar"
+  ],
+  "extensions": {
+    ".geojson": 19,
+    ".heic": 2,
+    ".jfif": 4,
+    ".jpeg": 19,
+    ".jpg": 276,
+    ".pdf": 3,
+    ".png": 248,
+    ".svg": 4,
+    ".tif": 6,
+    ".tiff": 2,
+    ".webp": 15213,
+    ".xml": 7
+  },
+  "image_entries": 15774,
+  "original_image_entries": 6212,
+  "rendition_image_entries": 9562,
+  "schema_version": 1,
+  "seven_zip_diagnostics": [
+    "WARNINGS:",
+    "There are data after the end of archive",
+    "Warnings: 1"
+  ],
+  "upload_entries": 15803,
+  "upload_uncompressed_bytes": 2251314429,
+  "volume_bytes": 2245294397
+}

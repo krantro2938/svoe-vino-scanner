@@ -1,0 +1,28 @@
+{
+  "catalog": "data/generated/expanded/catalog.jsonl",
+  "model_version": "hybrid-ocr-visual-v3-center",
+  "note": "Unlabelled public images; no accuracy claim. Uncached engine prediction excluding decoding/loading.",
+  "results": [
+    {
+      "image": "019c68d0.jpg",
+      "sha256": "c975b31e13bfa77dbc402d7ae4cd3889609cf85a9dadda45778a63232b4c6acf",
+      "slug": "pino-nuar-2025",
+      "method": "ocr",
+      "latency_ms": 1902.48
+    },
+    {
+      "image": "02eef911.webp",
+      "sha256": "8c760f87c8940934bfd19020d90aa949f843267c47a99180bdd41242a5033a36",
+      "slug": "massandra-muskatel-belyy-belye-sorta-vinograda-beloe-sladkoe-16",
+      "method": "ocr",
+      "latency_ms": 2247.64
+    },
+    {
+      "image": "096ca74e.jpg",
+      "sha256": "f84ac48acf05212cb213db4540b68a0afdb1a16308797d4fa1d5edeb4df8725e",
+      "slug": "kuban-vino-aristov-kyuve-aleksandr-millezimato-shardone-beloe-ekstra-bryut-12",
+      "method": "ocr",
+      "latency_ms": 2756.19
+    }
+  ]
+}

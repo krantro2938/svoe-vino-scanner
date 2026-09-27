@@ -1,0 +1,20 @@
+services:
+  inference:
+    build:
+      context: .
+      dockerfile: services/inference/Dockerfile
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_API_BASE_URL: http://127.0.0.1:8081
+    depends_on:
+      - inference
+    ports:
+      - "3003:3003"
+    restart: unless-stopped

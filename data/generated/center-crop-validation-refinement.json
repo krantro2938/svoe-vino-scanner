@@ -1,0 +1,48 @@
+{
+  "selection": "first400 query-id sorted validation shelf rows",
+  "test_touched": false,
+  "results": [
+    {
+      "factor": 0.24,
+      "correct": 191,
+      "total": 400,
+      "accuracy": 0.4775
+    },
+    {
+      "factor": 0.26,
+      "correct": 197,
+      "total": 400,
+      "accuracy": 0.4925
+    },
+    {
+      "factor": 0.27,
+      "correct": 191,
+      "total": 400,
+      "accuracy": 0.4775
+    },
+    {
+      "factor": 0.28,
+      "correct": 187,
+      "total": 400,
+      "accuracy": 0.4675
+    },
+    {
+      "factor": 0.29,
+      "correct": 184,
+      "total": 400,
+      "accuracy": 0.46
+    },
+    {
+      "factor": 0.3,
+      "correct": 173,
+      "total": 400,
+      "accuracy": 0.4325
+    },
+    {
+      "factor": 0.32,
+      "correct": 161,
+      "total": 400,
+      "accuracy": 0.4025
+    }
+  ]
+}

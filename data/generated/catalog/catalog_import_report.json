@@ -1,0 +1,1353 @@
+{
+  "archive": {
+    "archive_volumes": [
+      "prod-svoe-vino-strapi.part1.rar",
+      "prod-svoe-vino-strapi.part2.rar",
+      "prod-svoe-vino-strapi.part3.rar"
+    ],
+    "extensions": {
+      ".geojson": 19,
+      ".heic": 2,
+      ".jfif": 4,
+      ".jpeg": 19,
+      ".jpg": 276,
+      ".pdf": 3,
+      ".png": 248,
+      ".svg": 4,
+      ".tif": 6,
+      ".tiff": 2,
+      ".webp": 15213,
+      ".xml": 7
+    },
+    "image_entries": 15774,
+    "original_image_entries": 6212,
+    "rendition_image_entries": 9562,
+    "schema_version": 1,
+    "seven_zip_diagnostics": [
+      "WARNINGS:",
+      "There are data after the end of archive",
+      "Warnings: 1"
+    ],
+    "upload_entries": 15803,
+    "upload_uncompressed_bytes": 2251314429,
+    "volume_bytes": 2245294397
+  },
+  "csv": {
+    "cleaned_field_counts": {
+      "color": 38,
+      "description": 223,
+      "name": 36,
+      "photo_name": 1,
+      "winery": 20
+    },
+    "csv_data_rows": 4147,
+    "duplicate_slug_conflicts": [],
+    "exact_duplicate_groups": 2044,
+    "exact_duplicate_rows_removed": 2044,
+    "exact_unique_rows": 2103,
+    "missing_fields": {
+      "grapes": {
+        "count": 2,
+        "slugs": [
+          "beloe-polusladkoe",
+          "igristoe-zhemchuzhnoe-vino-polusuhoe-krasnoe-di-kaspiko-fiori-di-mare-di-caspico-fiori-di-mare"
+        ],
+        "source_row_count": 4
+      }
+    },
+    "normalized_title_to_multiple_slugs": [
+      {
+        "normalized_title": "4 elements. рислинг",
+        "slugs": [
+          "usadba-rodnoe-gnezdo-4-elements-risling-beloe-polusuhoe-12",
+          "usadba-rodnoe-gnezdo-4-elements-risling-beloe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "4 elements. совиньон блан",
+        "slugs": [
+          "usadba-rodnoe-gnezdo-4-elements-sovinon-blan-beloe-polusladkoe-12",
+          "usadba-rodnoe-gnezdo-4-elements-sovinon-blan-beloe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "adagum pinot noir",
+        "slugs": [
+          "olymp-winery-adagum-pinot-noir-pino-nuar-krasnoe-suhoe-11",
+          "olymp-winery-adagum-pinot-noir-pino-nuar-rozovoe-suhoe-11"
+        ]
+      },
+      {
+        "normalized_title": "blanc de blancs",
+        "slugs": [
+          "fanagoriya-blanc-de-blancs-shardone-beloe-bryut-12",
+          "gunko-winery-blanc-de-blancs-shardone-beloe-bryut-12",
+          "usadba-divnomorskoe-blanc-de-blancs-shardone-beloe-ekstra-bryut-12",
+          "usadba-perovskih-blanc-de-blancs-shardone-beloe-ekstra-bryut-11",
+          "vinodelnya-myshako-blanc-de-blancs-shardone-beloe-bryut-121"
+        ]
+      },
+      {
+        "normalized_title": "blanc de neige",
+        "slugs": [
+          "loco-cimbali-blanc-de-neige-shardone-beloe-suhoe-131",
+          "zolotaya-balka-blanc-de-neige-shardone-beloe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "brut d'or blanc de noirs",
+        "slugs": [
+          "abrau-dyurso-brut-dor-blanc-de-noirs-pino-nuar-beloe-bryut-115",
+          "abrau-dyurso-brut-dor-blanc-de-noirs-pino-nuar-beloe-bryut-125"
+        ]
+      },
+      {
+        "normalized_title": "brut zero dosage",
+        "slugs": [
+          "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-12",
+          "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-135"
+        ]
+      },
+      {
+        "normalized_title": "cantiani riesling",
+        "slugs": [
+          "cantiani-riesling",
+          "cantiani-riesling-1"
+        ]
+      },
+      {
+        "normalized_title": "cantiani rkatsiteli",
+        "slugs": [
+          "cantiani-rkatsiteli",
+          "cantiani-rkatsiteli-1"
+        ]
+      },
+      {
+        "normalized_title": "chardonnay",
+        "slugs": [
+          "chteau-le-grand-vostock-chardonnay-shardone-beloe-suhoe-14",
+          "gavras-chardonnay-shardone-beloe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "evolution pinot noir",
+        "slugs": [
+          "aya-organic-wine-vineyards-evolution-pinot-noir-pino-nuar-krasnoe-suhoe-125",
+          "evolution-pinot-noir"
+        ]
+      },
+      {
+        "normalized_title": "fagotine",
+        "slugs": [
+          "chteau-le-grand-vostock-fagotine-pino-gri-beloe-polusladkoe-105",
+          "chteau-le-grand-vostock-fagotine-pino-gri-rozovoe-polusladkoe-11"
+        ]
+      },
+      {
+        "normalized_title": "heritage dg skin contact rkatsiteli",
+        "slugs": [
+          "agrolayn-heritage-dg-skin-contact-rkatsiteli-rkatsiteli-beloe-suhoe-12",
+          "agrolayn-heritage-dg-skin-contact-rkatsiteli-rkatsiteli-krasnoe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "merlot",
+        "slugs": [
+          "chteau-le-grand-vostock-merlot-merlo-krasnoe-suhoe-14",
+          "ferrum-winery-merlot-merlo-krasnoe-suhoe-13",
+          "usadba-divnomorskoe-merlot-merlo-krasnoe-suhoe-149"
+        ]
+      },
+      {
+        "normalized_title": "par amour",
+        "slugs": [
+          "fanagoriya-par-amour-pervenets-magaracha-beloe-polusladkoe-105-125",
+          "fanagoriya-par-amour-pervenets-magaracha-beloe-polusuhoe-105-125",
+          "fanagoriya-par-amour-pervenets-magaracha-rozovoe-polusuhoe-105-125",
+          "fanagoriya-par-amour-rubin-golodrigi-krasnoe-polusladkoe-105-125"
+        ]
+      },
+      {
+        "normalized_title": "pinot noir",
+        "slugs": [
+          "ferrum-winery-pinot-noir-pino-nuar-rozovoe-suhoe-13",
+          "oleg-repin-pinot-noir-pino-nuar-krasnoe-suhoe-135",
+          "usadba-divnomorskoe-pinot-noir-pino-nuar-krasnoe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "purity in syrah",
+        "slugs": [
+          "aya-organic-wine-vineyards-purity-in-syrah-sira-krasnoe-suhoe-146",
+          "aya-organic-wine-vineyards-purity-in-syrah-sira-rozovoe-suhoe-132"
+        ]
+      },
+      {
+        "normalized_title": "riesling",
+        "slugs": [
+          "ferrum-winery-riesling-risling-reynskiy-beloe-suhoe-11",
+          "oleg-repin-riesling-risling-beloe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "rose",
+        "slugs": [
+          "esse-rose-sira-rozovoe-suhoe-12",
+          "usadba-divnomorskoe-rose-vione-rozovoe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "rose cuvee prestige",
+        "slugs": [
+          "esse-rose-cuvee-prestige-pino-nuar-rozovoe-bryut-115",
+          "esse-rose-cuvee-prestige-pino-nuar-rozovoe-bryut-13"
+        ]
+      },
+      {
+        "normalized_title": "tête de cheval blanc de blancs",
+        "slugs": [
+          "golubitskoe-estate-tte-de-cheval-blanc-de-blancs-shardone-beloe-bryut-12",
+          "pomeste-golubitskoe-tte-de-cheval-blanc-de-blancs-shardone-beloe-bryut-12"
+        ]
+      },
+      {
+        "normalized_title": "velvet season",
+        "slugs": [
+          "fanagoriya-velvet-season-muskat-ottonel-beloe-sladkoe-13",
+          "fanagoriya-velvet-season-risling-beloe-sladkoe-12"
+        ]
+      },
+      {
+        "normalized_title": "white blend",
+        "slugs": [
+          "domaine-lipko-white-blend-muskat-beloe-polusuhoe-12",
+          "domaine-lipko-white-blend-tsitronnyy-magaracha-beloe-suhoe-115"
+        ]
+      },
+      {
+        "normalized_title": "азюр",
+        "slugs": [
+          "vinodelnya-krinitsa-azyur-risling-beloe-suhoe-127",
+          "vinodelnya-krinitsa-azyur-vione-beloe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "алиготе",
+        "slugs": [
+          "belbek-aligote-beloe-suhoe-125",
+          "chateau-andre-aligote-beloe-suhoe-13",
+          "vaynkraft-aligote-beloe-suhoe-125",
+          "vinabani-aligote-beloe-suhoe-12",
+          "vinodelnya-uzunov-aligote-beloe-suhoe-127"
+        ]
+      },
+      {
+        "normalized_title": "алиготе. бурлюк",
+        "slugs": [
+          "valeriy-zaharin-aligote-burlyuk-beloe-bryut-115",
+          "valeriy-zaharin-aligote-burlyuk-beloe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "аратти каберне по-белому",
+        "slugs": [
+          "aratti-kaberne-po-belomu",
+          "aratti-kaberne-po-belomu-1"
+        ]
+      },
+      {
+        "normalized_title": "арпачино. иноходец",
+        "slugs": [
+          "vina-arpachina-arpachino-inohodets-aligote-beloe-ekstra-bryut-125",
+          "vina-arpachina-arpachino-inohodets-kumshatskiy-beloe-ekstra-bryut-125",
+          "vina-arpachina-arpachino-inohodets-puhlyakovskiy-beloe-ekstra-bryut-125",
+          "vina-arpachina-arpachino-inohodets-sibirkovyy-beloe-ekstra-bryut-125"
+        ]
+      },
+      {
+        "normalized_title": "ассамбляж",
+        "slugs": [
+          "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+          "vinodelnya-marko-assamblyazh-kaberne-sovinon-krasnoe-suhoe-14"
+        ]
+      },
+      {
+        "normalized_title": "бастардо",
+        "slugs": [
+          "massandra-bastardo-bastardo-magarachskiy-krasnoe-sladkoe-16",
+          "zmv-koktebel-bastardo-krasnoe-suhoe-14"
+        ]
+      },
+      {
+        "normalized_title": "белое сухое",
+        "slugs": [
+          "belbek-beloe-suhoe-kaberne-sovinon-krasnoe-14",
+          "beloe-suhoe"
+        ]
+      },
+      {
+        "normalized_title": "блан де блан",
+        "slugs": [
+          "blan-de-blan",
+          "shato-pino-blan-de-blan-shardone-beloe-ekstra-bryut-12"
+        ]
+      },
+      {
+        "normalized_title": "брют розе",
+        "slugs": [
+          "gunko-winery-bryut-roze-pino-nuar-rozovoe-12",
+          "rem-akchurin-bryut-roze-pino-nuar-rozovoe-129"
+        ]
+      },
+      {
+        "normalized_title": "в тумане",
+        "slugs": [
+          "le-k2-v-tumane-sovinon-blan-beloe-suhoe-127",
+          "le-k2-v-tumane-sovinon-blan-beloe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "вассал",
+        "slugs": [
+          "le-k2-vassal-risling-beloe-suhoe-14",
+          "le-k2-vassal-risling-reynskiy-beloe-suhoe-14"
+        ]
+      },
+      {
+        "normalized_title": "вионье",
+        "slugs": [
+          "andryus-yutsis-vione-beloe-suhoe-112",
+          "chateau-cachalot-vione-beloe-suhoe-112",
+          "dva-serdtsa-vione-beloe-suhoe-125",
+          "esse-vione-beloe-suhoe-13",
+          "loco-cimbali-vione-beloe-suhoe-14",
+          "usadba-mezyb-vione-beloe-suhoe-118",
+          "vinodelnya-krinitsa-vione-beloe-suhoe-133",
+          "vinodelnya-marko-vione-beloe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "высокий берег рислинг. зеленая серия",
+        "slugs": [
+          "vysokij-bereg-risling-zelenaya-seriya",
+          "vysokij-bereg-risling-zelenaya-seriya-1",
+          "vysokij-bereg-risling-zelenaya-seriya-2"
+        ]
+      },
+      {
+        "normalized_title": "гравити",
+        "slugs": [
+          "alma-valley-graviti-kaberne-sovinon-krasnoe-suhoe-15",
+          "alma-valley-graviti-pino-blan-beloe-suhoe-135"
+        ]
+      },
+      {
+        "normalized_title": "ди каспико",
+        "slugs": [
+          "derbent-vino-di-kaspiko-merlo-krasnoe-polusladkoe-11",
+          "derbent-vino-di-kaspiko-rkatsiteli-beloe-polusladkoe-11",
+          "derbent-vino-di-kaspiko-shardone-beloe-bryut-105-125",
+          "derbent-vino-di-kaspiko-shardone-beloe-polusladkoe-105-125"
+        ]
+      },
+      {
+        "normalized_title": "жемчужная 9 каберне совиньон, пино нуар",
+        "slugs": [
+          "zhemchuzhnaya-9-kaberne-sovinon-pino-nuar",
+          "zhemchuzhnaya-9-kaberne-sovinon-pino-nuar-1"
+        ]
+      },
+      {
+        "normalized_title": "жемчужная 9 пино нуар, мускат розовый",
+        "slugs": [
+          "zhemchuzhnaya-9-pino-nuar-muskat-rozovyj",
+          "zhemchuzhnaya-9-pino-nuar-muskat-rozovyj-1",
+          "zhemchuzhnaya-9-pino-nuar-muskat-rozovyj-2"
+        ]
+      },
+      {
+        "normalized_title": "жемчужная 9 цитрон, шардоне",
+        "slugs": [
+          "zhemchuzhnaya-9-czitron-shardone",
+          "zhemchuzhnaya-9-czitron-shardone-1"
+        ]
+      },
+      {
+        "normalized_title": "каберне совиньон",
+        "slugs": [
+          "abrau-dyurso-kaberne-sovinon-krasnoe-suhoe-125",
+          "belbek-kaberne-sovinon-krasnoe-suhoe-138",
+          "bogovich-wine-vineyard-kaberne-sovinon-krasnoe-suhoe-125",
+          "chateau-andre-kaberne-sovinon-krasnoe-suhoe-13",
+          "esse-kaberne-sovinon-krasnoe-suhoe-14",
+          "golubitskoe-estate-kaberne-sovinon-krasnoe-suhoe-137",
+          "kaberne-sovinon",
+          "kaberne-sovinon-1",
+          "kaberne-sovinon-2",
+          "loco-cimbali-kaberne-sovinon-krasnoe-suhoe-146",
+          "mons-albus-kaberne-sovinon-krasnoe-suhoe-14",
+          "shato-pino-kaberne-sovinon-krasnoe-suhoe-14",
+          "twopeters_kaberne_sovinion",
+          "vaynkraft-kaberne-sovinon-krasnoe-suhoe-14",
+          "villa-sofiya-kaberne-sovinon-krasnoe-suhoe-133",
+          "vinodelnya-batrak-kaberne-sovinon-krasnoe-suhoe-14",
+          "vinodelnya-begildeeva-kaberne-sovinon-krasnoe-suhoe-14",
+          "vinodelnya-berdyaeva-kaberne-sovinon-krasnoe-suhoe-145",
+          "vinodelnya-marchenko-kaberne-sovinon-krasnoe-suhoe-14",
+          "vinodelnya-myshako-kaberne-sovinon-krasnoe-suhoe-138",
+          "vinodelnya-vedernikov-kaberne-sovinon-krasnoe-suhoe-14"
+        ]
+      },
+      {
+        "normalized_title": "каберне совиньон - мерло",
+        "slugs": [
+          "shato-pino-kaberne-sovinon-merlo-krasnoe-suhoe-135",
+          "vinnyy-kooperativ-intuitsiya-kaberne-sovinon-merlo-saperavi-krasnoe-suhoe-128"
+        ]
+      },
+      {
+        "normalized_title": "каберне совиньон классик",
+        "slugs": [
+          "villa-urkusta-kaberne-sovinon-klassik-krasnoe-suhoe-12",
+          "villa-urkusta-kaberne-sovinon-klassik-krasnoe-suhoe-139"
+        ]
+      },
+      {
+        "normalized_title": "каберне совиньон резерв",
+        "slugs": [
+          "alma-valley-kaberne-sovinon-rezerv-krasnoe-suhoe-15",
+          "chateau-de-talu-kaberne-sovinon-rezerv-krasnoe-suhoe-14",
+          "golubitskoe-estate-kaberne-sovinon-rezerv-krasnoe-suhoe-125",
+          "pomeste-golubitskoe-kaberne-sovinon-rezerv-krasnoe-suhoe-143",
+          "usadba-markoth-kaberne-sovinon-rezerv-krasnoe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "каберне фран",
+        "slugs": [
+          "alma-valley-kaberne-fran-krasnoe-suhoe-145",
+          "bakla-vines-kaberne-fran-krasnoe-suhoe-143",
+          "belbek-kaberne-fran-krasnoe-suhoe-134",
+          "bogovich-wine-vineyard-kaberne-fran-krasnoe-suhoe-135",
+          "chateau-andre-kaberne-fran-krasnoe-suhoe-14",
+          "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-kaberne-fran-krasnoe-suhoe-13",
+          "dva-serdtsa-kaberne-fran-krasnoe-suhoe-14",
+          "esse-kaberne-fran-krasnoe-suhoe-13",
+          "ferrum-winery-kaberne-fran-krasnoe-suhoe-12",
+          "kaberne-fran",
+          "radiowine-kaberne-fran-krasnoe-suhoe-14",
+          "sober-bash-kaberne-fran-krasnoe-suhoe-127",
+          "sober-bash-kaberne-fran-krasnoe-suhoe-13",
+          "sober-bash-kaberne-fran-rozovoe-suhoe-12",
+          "viktor-stashko-kaberne-fran-krasnoe-suhoe-145",
+          "vinodelnya-berdyaeva-kaberne-fran-krasnoe-suhoe-115",
+          "vinodelnya-myshako-kaberne-fran-krasnoe-suhoe-142"
+        ]
+      },
+      {
+        "normalized_title": "каберне фран резерв",
+        "slugs": [
+          "alma-valley-kaberne-fran-rezerv-krasnoe-suhoe-15",
+          "chateau-de-talu-kaberne-fran-rezerv-krasnoe-suhoe-13",
+          "perovskih_kaberne_fran_reserve"
+        ]
+      },
+      {
+        "normalized_title": "кавказиан",
+        "slugs": [
+          "derbent-vino-kavkazian-merlo-krasnoe-polusladkoe-105-125",
+          "derbent-vino-kavkazian-rkatsiteli-beloe-bryut-105-125"
+        ]
+      },
+      {
+        "normalized_title": "кларет",
+        "slugs": [
+          "bogovich-wine-vineyard-klaret-pino-nuar-krasnoe-suhoe-119",
+          "vinodelnya-batrak-klaret-podarok-magaracha-rozovoe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "кокур",
+        "slugs": [
+          "alma-valley-kokur-beloe-suhoe-14",
+          "belbek-kokur-kokur-belyy-beloe-suhoe-13",
+          "dva-serdtsa-kokur-beloe-suhoe-125",
+          "twopeters_kokur",
+          "uppa-winery-kokur-kokur-belyy-beloe-suhoe-12",
+          "winepark-kokur-kokur-belyy-beloe-suhoe-13",
+          "yaiyla-winery-kokur-kokur-belyy-beloe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "красностоп золотовский",
+        "slugs": [
+          "krasnostop-zolotovskij",
+          "nesterov-winery-krasnostop-zolotovskiy-krasnoe-suhoe-12",
+          "vinodelnya-marchenko-krasnostop-zolotovskiy-krasnoe-suhoe-14",
+          "vinodelnya-molchanova-krasnostop-zolotovskiy-krasnoe-suhoe-13",
+          "vinodelnya-molchanova-krasnostop-zolotovskiy-krasnoe-suhoe-135",
+          "vinodelnya-vedernikov-krasnostop-zolotovskiy-krasnoe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "красностоп золотовский. на террасах",
+        "slugs": [
+          "imenie-sikory-krasnostop-zolotovskiy-na-terrasah-krasnoe-suhoe-14",
+          "imenie-sikory-krasnostop-zolotovskiy-na-terrasah-rozovoe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "красностоп резерв",
+        "slugs": [
+          "chateau-de-talu-krasnostop-rezerv-krasnostop-anapskiy-krasnoe-suhoe-137",
+          "chateau-le-grand-vostock-krasnostop-rezerv-krasnoe-suhoe-145"
+        ]
+      },
+      {
+        "normalized_title": "марселан",
+        "slugs": [
+          "vinodelnya-myshako-marselan-krasnoe-suhoe-143",
+          "vinodelnya-myshako-marselan-krasnoe-suhoe-144"
+        ]
+      },
+      {
+        "normalized_title": "мерло",
+        "slugs": [
+          "alma-valley-merlo-krasnoe-suhoe-13",
+          "belbek-merlo-krasnoe-suhoe-13",
+          "bogovich-wine-vineyard-merlo-krasnoe-suhoe-14",
+          "chateau-andre-merlo-krasnoe-suhoe-14",
+          "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-merlo-krasnoe-suhoe-13",
+          "esse-merlo-krasnoe-suhoe-135",
+          "golubitskoe-estate-merlo-krasnoe-suhoe-135",
+          "loco-cimbali-merlo-krasnoe-suhoe-138",
+          "merlo",
+          "merlo-1",
+          "mons-albus-merlo-rozovoe-suhoe-132",
+          "orlov_merlo",
+          "perovskih_merlo",
+          "stn-winery-merlo-krasnoe-suhoe-14",
+          "vinodelnya-batrak-merlo-rozovoe-suhoe-13",
+          "vinodelnya-begildeeva-merlo-krasnoe-suhoe-14",
+          "vinodelnya-marchenko-merlo-krasnoe-suhoe-14",
+          "vinodelnya-marko-merlo-krasnoe-suhoe-14",
+          "zmv-koktebel-merlo-krasnoe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "мерло резерв",
+        "slugs": [
+          "alma-valley-merlo-rezerv-krasnoe-suhoe-14",
+          "alma-valley-merlo-rezerv-krasnoe-suhoe-15",
+          "chateau-de-talu-merlo-rezerv-krasnoe-suhoe-14",
+          "golubitskoe-estate-merlo-rezerv-krasnoe-suhoe-135",
+          "usadba-markoth-merlo-rezerv-krasnoe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "молодое. шато тамань",
+        "slugs": [
+          "molodoe-shato-taman",
+          "molodoe-shato-taman-1"
+        ]
+      },
+      {
+        "normalized_title": "мускат",
+        "slugs": [
+          "belbek-muskat-muskat-belyy-beloe-suhoe-127",
+          "chateau-de-talu-muskat-beloe-suhoe-13",
+          "dva-serdtsa-muskat-muskat-belyy-beloe-polusuhoe-12",
+          "esse-muskat-muskat-belyy-beloe-suhoe-115",
+          "perovskih_muskat",
+          "stn-winery-muskat-beloe-suhoe-115"
+        ]
+      },
+      {
+        "normalized_title": "мускат белый",
+        "slugs": [
+          "esse-muskat-belyy-beloe-suhoe-135",
+          "rem-akchurin-muskat-belyy-beloe-suhoe-135"
+        ]
+      },
+      {
+        "normalized_title": "мускат оранж",
+        "slugs": [
+          "belbek-muskat-oranzh-muskat-belyy-oranzhevoe-suhoe-125",
+          "bogovich-wine-vineyard-muskat-oranzh-muskat-belyy-beloe-suhoe-125",
+          "esse-muskat-oranzh-muskat-belyy-beloe-suhoe-115",
+          "perovskih_muskat_orange",
+          "rem-akchurin-muskat-oranzh-oranzhevoe-suhoe-115"
+        ]
+      },
+      {
+        "normalized_title": "новый свет. шардоне кюве де престиж",
+        "slugs": [
+          "novyj-svet-shardone-kyuve-de-prestizh",
+          "novyj-svet-shardone-kyuve-de-prestizh-1"
+        ]
+      },
+      {
+        "normalized_title": "оранж",
+        "slugs": [
+          "loco-cimbali-oranzh-muskat-belyy-beloe-suhoe-129",
+          "loco-cimbali-oranzh-muskat-oranzhevoe-suhoe-127"
+        ]
+      },
+      {
+        "normalized_title": "петнат пино гри",
+        "slugs": [
+          "shato-pino-petnat-pino-gri-beloe-ekstra-bryut-11",
+          "shato-pino-petnat-pino-gri-rozovoe-ekstra-bryut-11"
+        ]
+      },
+      {
+        "normalized_title": "пино блан",
+        "slugs": [
+          "alma-valley-pino-blan-beloe-suhoe-14",
+          "loco-cimbali-pino-blan-beloe-suhoe-13",
+          "winepark-pino-blan-beloe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "пино гри",
+        "slugs": [
+          "alma-valley-pino-gri-beloe-polusuhoe-15",
+          "chateau-andre-pino-gri-beloe-suhoe-14",
+          "esse-pino-gri-beloe-suhoe-12",
+          "esse-pino-gri-beloe-suhoe-135",
+          "massandra-pino-gri-beloe-sladkoe-16",
+          "sober-bash-pino-gri-beloe-suhoe-11"
+        ]
+      },
+      {
+        "normalized_title": "пино гриджио",
+        "slugs": [
+          "shato-pino-pino-gridzhio-beloe-suhoe-12",
+          "vinodelnya-myshako-pino-gridzhio-beloe-polusuhoe-123"
+        ]
+      },
+      {
+        "normalized_title": "пино менье",
+        "slugs": [
+          "belbek-pino-mene-krasnoe-suhoe-128",
+          "loco-cimbali-pino-mene-krasnoe-suhoe-115"
+        ]
+      },
+      {
+        "normalized_title": "пино нуар",
+        "slugs": [
+          "a-gordienko-m-nikolaev-pino-nuar-krasnoe-suhoe-135",
+          "abrau-dyurso-pino-nuar-krasnoe-suhoe-12",
+          "abrau-dyurso-pino-nuar-krasnoe-suhoe-125",
+          "alma-valley-pino-nuar-beloe-ekstra-bryut-115",
+          "alma-valley-pino-nuar-krasnoe-suhoe-13",
+          "andryus-yutsis-pino-nuar-krasnoe-suhoe-12",
+          "bakla-vines-pino-nuar-krasnoe-suhoe-125",
+          "belbek-pino-nuar-krasnoe-suhoe-133",
+          "belmas-winery-pino-nuar-krasnoe-suhoe-135",
+          "bogovich-wine-vineyard-pino-nuar-krasnoe-suhoe-125",
+          "chateau-andre-pino-nuar-krasnoe-suhoe-14",
+          "chateau-cachalot-pino-nuar-krasnoe-suhoe-12",
+          "denisov-winery-pino-nuar-rozovoe-suhoe-125",
+          "domaine-lipko-pino-nuar-krasnoe-suhoe-12",
+          "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-pino-nuar-krasnoe-suhoe-13",
+          "esse-pino-nuar-krasnoe-suhoe-115",
+          "loco-cimbali-pino-nuar-krasnoe-suhoe-126",
+          "nikolaev-i-synovya-pino-nuar-krasnoe-suhoe-125",
+          "pino-nuar",
+          "shato-pino-pino-nuar-krasnoe-suhoe-135",
+          "stn-winery-pino-nuar-krasnoe-suhoe-12",
+          "tempelhof-winery-pino-nuar-krasnoe-suhoe-125",
+          "vaynkraft-pino-nuar-krasnoe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "пино нуар резерв",
+        "slugs": [
+          "alma-valley-pino-nuar-rezerv-krasnoe-suhoe-14",
+          "belbek-pino-nuar-rezerv-krasnoe-suhoe-135",
+          "chateau-le-grand-vostock-pino-nuar-rezerv-krasnoe-suhoe-14",
+          "golubitskoe-estate-pino-nuar-rezerv-krasnoe-suhoe-132",
+          "usadba-perovskih-pino-nuar-rezerv-krasnoe-suhoe-122"
+        ]
+      },
+      {
+        "normalized_title": "пино нуар розе",
+        "slugs": [
+          "belbek-pino-nuar-roze-rozovoe-suhoe-115",
+          "chateau-andre-pino-nuar-roze-rozovoe-suhoe-13",
+          "domaine-de-la-vivandiere-pino-nuar-roze-rozovoe-suhoe-122",
+          "shato-pino-pino-nuar-roze-rozovoe-ekstra-bryut-115",
+          "vinabani-pino-nuar-roze-rozovoe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "приват",
+        "slugs": [
+          "privat",
+          "solnechnaya-dolina-privat-kaberne-sovinon-krasnoe-sladkoe-155"
+        ]
+      },
+      {
+        "normalized_title": "пти вердо",
+        "slugs": [
+          "domaine-lipko-pti-verdo-krasnoe-suhoe-14",
+          "villa-di-alma-pti-verdo-krasnoe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "ренессанс шардоне",
+        "slugs": [
+          "vinodelnya-raevskoe-renessans-shardone-beloe-suhoe-127",
+          "vinodelnya-raevskoe-renessans-shardone-beloe-suhoe-128"
+        ]
+      },
+      {
+        "normalized_title": "рислинг",
+        "slugs": [
+          "abrau-dyurso-risling-beloe-suhoe-12",
+          "abrau-dyurso-risling-beloe-suhoe-13",
+          "alma-valley-risling-beloe-polusuhoe-125",
+          "andryus-yutsis-risling-beloe-suhoe-12",
+          "bakla-vines-risling-beloe-polusuhoe-125",
+          "belbek-risling-risling-reynskiy-beloe-suhoe-12",
+          "belmas-winery-risling-beloe-suhoe-135",
+          "chateau-andre-risling-beloe-suhoe-13",
+          "chateau-cachalot-risling-beloe-suhoe-115",
+          "denisov-winery-risling-beloe-suhoe-115",
+          "domaine-de-la-vivandiere-risling-beloe-suhoe-122",
+          "domaine-lipko-risling-beloe-polusuhoe-124",
+          "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-risling-beloe-suhoe-12",
+          "dubinin-winery-risling-beloe-suhoe-12",
+          "esse-risling-beloe-suhoe-115",
+          "golubitskoe-estate-risling-beloe-suhoe-125",
+          "gunko-winery-risling-beloe-suhoe-135",
+          "loco-cimbali-risling-beloe-suhoe-125",
+          "loco-cimbali-risling-risling-reynskiy-beloe-suhoe-13",
+          "rem-akchurin-risling-beloe-polusuhoe-12",
+          "rem-akchurin-risling-beloe-suhoe-125",
+          "risling",
+          "risling-1",
+          "sober-bash-risling-risling-reynskiy-beloe-suhoe-11",
+          "sober-bash-risling-risling-reynskiy-beloe-suhoe-12",
+          "tempelhof-winery-risling-risling-reynskiy-beloe-suhoe-115",
+          "twopeters_risling",
+          "v2r-risling-risling-reynskiy-beloe-suhoe-122",
+          "vaynkraft-risling-beloe-suhoe-123",
+          "villa-sofiya-risling-beloe-suhoe-12",
+          "villa-sofiya-risling-beloe-suhoe-131",
+          "vinodelnya-berdyaeva-risling-beloe-polusuhoe-108",
+          "vinodelnya-berdyaeva-risling-risling-reynskiy-beloe-suhoe-121",
+          "vinodelnya-krinitsa-risling-beloe-suhoe-13",
+          "vinodelnya-marko-risling-beloe-suhoe-12",
+          "vinodelnya-myshako-risling-beloe-suhoe-123",
+          "winepark-risling-beloe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "рислинг. поздний сбор",
+        "slugs": [
+          "belbek-risling-pozdniy-sbor-risling-reynskiy-beloe-sladkoe-117",
+          "imenie-sikory-risling-pozdniy-sbor-beloe-sladkoe-13"
+        ]
+      },
+      {
+        "normalized_title": "рислинг. семейный резерв",
+        "slugs": [
+          "imenie-sikory-risling-semeynyy-rezerv-beloe-suhoe-13",
+          "imenie-sikory-risling-semeynyy-rezerv-risling-reynskiy-beloe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "ркацители",
+        "slugs": [
+          "belbek-rkatsiteli-beloe-suhoe-13",
+          "denisov-winery-rkatsiteli-beloe-suhoe-112",
+          "esse-rkatsiteli-beloe-suhoe-125",
+          "levokumskoe-rkatsiteli-beloe-suhoe-10",
+          "loco-cimbali-rkatsiteli-oranzhevoe-suhoe-13",
+          "mons-albus-rkatsiteli-beloe-suhoe-124",
+          "sober-bash-rkatsiteli-beloe-suhoe-14",
+          "usadba-perovskih-rkatsiteli-beloe-suhoe-13",
+          "vinodelnya-marchenko-rkatsiteli-beloe-suhoe-135",
+          "vinodelnya-vedernikov-rkatsiteli-beloe-suhoe-13",
+          "zmv-koktebel-rkatsiteli-beloe-sladkoe-135"
+        ]
+      },
+      {
+        "normalized_title": "ркацители оранж",
+        "slugs": [
+          "bogovich-wine-vineyard-rkatsiteli-oranzh-beloe-suhoe-125",
+          "esse-rkatsiteli-oranzh-beloe-suhoe-12",
+          "perovskih_rkaciteli_orange",
+          "vaynkraft-rkatsiteli-oranzh-oranzhevoe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "розе",
+        "slugs": [
+          "chateau-de-talu-roze-kaberne-sovinon-rozovoe-suhoe-14",
+          "dubinin-winery-roze-kaberne-fran-rozovoe-suhoe-13",
+          "esse-roze-kaberne-sovinon-rozovoe-suhoe-135",
+          "gunko-winery-roze-kaberne-fran-rozovoe-suhoe-135",
+          "perovskih_rose",
+          "roze",
+          "roze-1",
+          "roze-2",
+          "v2r-roze-kaberne-sovinon-rozovoe-polusuhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "розе сира",
+        "slugs": [
+          "belbek-roze-sira-rozovoe-suhoe-125",
+          "domaine-lipko-roze-sira-rozovoe-suhoe-135"
+        ]
+      },
+      {
+        "normalized_title": "розовое",
+        "slugs": [
+          "dva-serdtsa-rozovoe-kaberne-sovinon-suhoe-13",
+          "vinodelnya-pokrovskaya-rozovoe-marinovskiy-suhoe-135"
+        ]
+      },
+      {
+        "normalized_title": "розовое полусладкое",
+        "slugs": [
+          "rozovoe-polusladkoe",
+          "rozovoe-polusladkoe-1",
+          "rozovoe-polusladkoe-2"
+        ]
+      },
+      {
+        "normalized_title": "российское шампанское коллекционное полусухое белое «новый свет»",
+        "slugs": [
+          "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-kollektsionnoe-polusuhoe-beloe-novyy-svet-risling-125",
+          "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-kollektsionnoe-polusuhoe-beloe-novyy-svet-shardone-13"
+        ]
+      },
+      {
+        "normalized_title": "рубин голодриги",
+        "slugs": [
+          "nesterov-winery-rubin-golodrigi-krasnoe-suhoe-11",
+          "rubin-golodrigi"
+        ]
+      },
+      {
+        "normalized_title": "санджовезе",
+        "slugs": [
+          "belbek-sandzhoveze-krasnoe-suhoe-14",
+          "cellar-master-sandzhoveze-krasnoe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "саперави",
+        "slugs": [
+          "belbek-saperavi-krasnoe-suhoe-137",
+          "dacha-serdyuka-saperavi-saperavi-severnyy-krasnoe-suhoe-14",
+          "dva-serdtsa-saperavi-krasnoe-suhoe-135",
+          "esse-saperavi-krasnoe-suhoe-13",
+          "nesterov-winery-saperavi-krasnoe-suhoe-135",
+          "sober-bash-saperavi-krasnoe-suhoe-13",
+          "twopeters_saperavi",
+          "vinabani-saperavi-krasnoe-suhoe-135",
+          "vinodelnya-78-saperavi-krasnoe-suhoe-135",
+          "vinodelnya-zhakov-saperavi-krasnoe-suhoe-126"
+        ]
+      },
+      {
+        "normalized_title": "семильон резерв",
+        "slugs": [
+          "belbek-semilon-rezerv-beloe-suhoe-127",
+          "perovskih_semilion_reserv"
+        ]
+      },
+      {
+        "normalized_title": "сибирьковый",
+        "slugs": [
+          "blagolyubov-sibirkovyy-beloe-suhoe-115",
+          "dacha-serdyuka-sibirkovyy-beloe-suhoe-135",
+          "vinodelnya-vedernikov-sibirkovyy-beloe-suhoe-11"
+        ]
+      },
+      {
+        "normalized_title": "сира",
+        "slugs": [
+          "bakla-vines-sira-krasnoe-suhoe-135",
+          "chateau-cachalot-sira-krasnoe-suhoe-12",
+          "gavras-sira-krasnoe-suhoe-135",
+          "sira",
+          "viktor-stashko-sira-krasnoe-suhoe-14"
+        ]
+      },
+      {
+        "normalized_title": "совиньон блан",
+        "slugs": [
+          "alma-valley-sovinon-blan-beloe-suhoe-14",
+          "belbek-sovinon-blan-beloe-suhoe-12",
+          "blagolyubov-sovinon-blan-beloe-suhoe-125",
+          "chateau-andre-sovinon-blan-beloe-suhoe-13",
+          "denisov-winery-sovinon-blan-beloe-suhoe-115",
+          "domaine-lipko-sovinon-blan-beloe-suhoe-118",
+          "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-sovinon-blan-beloe-suhoe-12",
+          "dubinin-winery-sovinon-blan-beloe-suhoe-12",
+          "esse-sovinon-blan-beloe-suhoe-12",
+          "golubitskoe-estate-sovinon-blan-beloe-suhoe-11",
+          "levokumskoe-sovinon-blan-beloe-suhoe-10",
+          "mantra-estate-sauvignon-blanc-sovinon-blan-beloe-suhoe-133",
+          "orlov_sauvignon_blan",
+          "sovinon-blan-krasnaya-gorka",
+          "v2r-sovinon-blan-beloe-suhoe-13",
+          "vaynkraft-sovinon-blan-beloe-suhoe-13",
+          "villa-sofiya-sovinon-blan-beloe-suhoe-123",
+          "villa-sofiya-sovinon-blan-beloe-suhoe-14",
+          "vinodelnya-myshako-sovinon-blan-beloe-suhoe-122",
+          "vinodelnya-uzunov-sovinon-blan-beloe-suhoe-125"
+        ]
+      },
+      {
+        "normalized_title": "солнце, воздух, виноград",
+        "slugs": [
+          "alma-valley-solntse-vozduh-vinograd-kokur-beloe-polusladkoe-13",
+          "alma-valley-solntse-vozduh-vinograd-merlo-krasnoe-polusladkoe-14",
+          "alma-valley-solntse-vozduh-vinograd-shardone-beloe-polusuhoe-13",
+          "alma-valley-solntse-vozduh-vinograd-sira-shiraz-krasnoe-polusuhoe-135",
+          "alma-valley-solntse-vozduh-vinograd-sira-shiraz-rozovoe-polusladkoe-12"
+        ]
+      },
+      {
+        "normalized_title": "темпранильо",
+        "slugs": [
+          "alma-valley-tempranilo-krasnoe-suhoe-13",
+          "vinodelnya-myshako-tempranilo-rozovoe-suhoe-134"
+        ]
+      },
+      {
+        "normalized_title": "траминер",
+        "slugs": [
+          "alma-valley-traminer-beloe-suhoe-125",
+          "chateau-andre-traminer-beloe-suhoe-135",
+          "vaynkraft-traminer-traminer-rozovyy-beloe-suhoe-14"
+        ]
+      },
+      {
+        "normalized_title": "трио белое",
+        "slugs": [
+          "villa-sofiya-trio-beloe-risling-suhoe-12",
+          "villa-sofiya-trio-beloe-risling-suhoe-123"
+        ]
+      },
+      {
+        "normalized_title": "цимлянский черный брют розе",
+        "slugs": [
+          "vinodelnya-vedernikov-tsimlyanskiy-chernyy-bryut-roze-rozovoe-129",
+          "vinodelnya-vedernikov-tsimlyanskiy-chernyy-bryut-roze-rozovoe-14"
+        ]
+      },
+      {
+        "normalized_title": "цитрон",
+        "slugs": [
+          "czitronnyj-magaracha",
+          "denisov-winery-tsitron-tsitronnyy-magaracha-beloe-suhoe-112"
+        ]
+      },
+      {
+        "normalized_title": "шардоне",
+        "slugs": [
+          "abrau-dyurso-shardone-beloe-suhoe-12",
+          "abrau-dyurso-shardone-beloe-suhoe-13",
+          "alma-valley-shardone-beloe-suhoe-135",
+          "chateau-andre-shardone-beloe-suhoe-13",
+          "donskoe-vinodelcheskoe-hozyaystvo-elbuzd-shardone-beloe-suhoe-13",
+          "loco-cimbali-shardone-beloe-suhoe-127",
+          "mantra-estate-chardonnay-shardone-beloe-suhoe-135",
+          "nikolaev-i-synovya-shardone-beloe-suhoe-125",
+          "rem-akchurin-shardone-beloe-bryut-14",
+          "shardone",
+          "shardone-1",
+          "shardone-2",
+          "shato-pino-shardone-beloe-suhoe-125",
+          "twopeters_shardone",
+          "usadba-markoth-shardone-beloe-suhoe-12",
+          "villa-sofiya-shardone-beloe-suhoe-14",
+          "vinodelnya-berdyaeva-shardone-beloe-suhoe-125",
+          "vinodelnya-myshako-shardone-beloe-suhoe-123",
+          "vinodelnya-myshako-shardone-beloe-suhoe-145",
+          "zmv-koktebel-shardone-beloe-suhoe-12"
+        ]
+      },
+      {
+        "normalized_title": "шардоне резерв",
+        "slugs": [
+          "alma-valley-shardone-rezerv-beloe-suhoe-135",
+          "alma-valley-shardone-rezerv-beloe-suhoe-14",
+          "chateau-de-talu-shardone-rezerv-beloe-suhoe-13",
+          "golubitskoe-estate-shardone-rezerv-beloe-suhoe-135",
+          "pomeste-golubitskoe-shardone-rezerv-beloe-suhoe-132",
+          "shardone-rezerv",
+          "vinodelnya-uzunov-shardone-rezerv-beloe-suhoe-135"
+        ]
+      },
+      {
+        "normalized_title": "шато тамань брют",
+        "slugs": [
+          "shato-taman-bryut",
+          "shato-taman-bryut-1"
+        ]
+      },
+      {
+        "normalized_title": "шато тамань. grape dance",
+        "slugs": [
+          "shato-taman-grape-dance",
+          "shato-taman-grape-dance-1"
+        ]
+      },
+      {
+        "normalized_title": "шенен блан",
+        "slugs": [
+          "andryus-yutsis-shenen-blan-beloe-suhoe-12",
+          "aromatnoe-shenen-blan-beloe-suhoe-13",
+          "chateau-cachalot-shenen-blan-beloe-suhoe-113",
+          "esse-shenen-blan-beloe-suhoe-13"
+        ]
+      },
+      {
+        "normalized_title": "шираз",
+        "slugs": [
+          "alma-valley-shiraz-krasnoe-suhoe-13",
+          "shato-pino-shiraz-krasnoe-suhoe-135",
+          "shato-pino-shiraz-krasnoe-suhoe-14",
+          "vinodelnya-myshako-shiraz-krasnoe-suhoe-146"
+        ]
+      },
+      {
+        "normalized_title": "эндемы каберне совиньон",
+        "slugs": [
+          "derbent-vino-endemy-kaberne-sovinon-krasnoe-suhoe-13",
+          "derbent-vino-endemy-kaberne-sovinon-rozovoe-bryut-105-125"
+        ]
+      },
+      {
+        "normalized_title": "эндемы саперави",
+        "slugs": [
+          "derbent-vino-endemy-saperavi-krasnoe-suhoe-13",
+          "endemy-saperavi",
+          "vino-suhoe-krasnoe-endemy-saperavi"
+        ]
+      },
+      {
+        "normalized_title": "эндемы совиньон",
+        "slugs": [
+          "derbent-vino-endemy-sovinon-beloe-bryut-105-125",
+          "vino-suhoe-beloe-endemy-sovinon"
+        ]
+      },
+      {
+        "normalized_title": "эндемы шардоне",
+        "slugs": [
+          "derbent-vino-endemy-shardone-beloe-bryut-105-125",
+          "derbent-vino-endemy-shardone-beloe-suhoe-13",
+          "vino-suhoe-beloe-endemy-shardone"
+        ]
+      },
+      {
+        "normalized_title": "эстер",
+        "slugs": [
+          "vinodelnya-krinitsa-ester-muskat-beloe-suhoe-128",
+          "vinodelnya-krinitsa-ester-muskat-belyy-beloe-suhoe-12"
+        ]
+      }
+    ],
+    "photo_to_multiple_slugs": [
+      {
+        "photo_name": "03-Silvaner-2022-Barrel-Fermented.webp",
+        "slugs": [
+          "vibes-silvaner-barrel-fermented-2022",
+          "vibes-vermentino-viognier-barrel-fermented-2022"
+        ]
+      },
+      {
+        "photo_name": "4285_eqF1Fau-no-bg-preview (carve.photos).webp",
+        "slugs": [
+          "aligote-avtorskoe",
+          "aligote-avtorskoe-vino"
+        ]
+      },
+      {
+        "photo_name": "4300_tlKHpEg.webp",
+        "slugs": [
+          "novyj-svet-polusladkoe",
+          "novyj-svet-vyderzhannoe-bryut"
+        ]
+      },
+      {
+        "photo_name": "DSC00836.webp",
+        "slugs": [
+          "method-classic-kokur",
+          "pino-nuar-2025"
+        ]
+      },
+      {
+        "photo_name": "DSC00839-Photoroom.webp",
+        "slugs": [
+          "kokur-2025",
+          "kokur-suhoe-2025"
+        ]
+      },
+      {
+        "photo_name": "DSC09173.webp",
+        "slugs": [
+          "aligote-barrel-2024",
+          "aligote-barrel-2025"
+        ]
+      },
+      {
+        "photo_name": "bottle-02-Cabernet_Franc.webp",
+        "slugs": [
+          "cabernet-franc-pinot-noir-2021",
+          "cabernet-franc-pinot-noir-2022"
+        ]
+      },
+      {
+        "photo_name": "Агора Резерв Яхтинг Совиньон — копия.webp",
+        "slugs": [
+          "agora-yachting-cabernet-sauvignon",
+          "agora-yachting-sauvignon"
+        ]
+      },
+      {
+        "photo_name": "Алиготе, Цитрон бел.сух.webp",
+        "slugs": [
+          "zhemchuzhnaya-9-aligote-czitron",
+          "zhemchuzhnaya-9-czitron-shardone"
+        ]
+      },
+      {
+        "photo_name": "Вионье 2023.webp",
+        "slugs": [
+          "vinodelnya-byurne-byurne-pino-blan-beloe-suhoe-14",
+          "vinodelnya-byurne-vione-beloe-suhoe-135"
+        ]
+      },
+      {
+        "photo_name": "Ребо reserve_2023.webp",
+        "slugs": [
+          "rebo-rezerv",
+          "sand-zh-oveze-rezerv"
+        ]
+      },
+      {
+        "photo_name": "Шардоне.webp",
+        "slugs": [
+          "aratti-shardone-beloe-suhoe",
+          "shardone-balaklava"
+        ]
+      },
+      {
+        "photo_name": "мерло.webp",
+        "slugs": [
+          "merlo",
+          "merlo-1"
+        ]
+      }
+    ],
+    "slug_to_multiple_photos": [],
+    "unique_nonempty_photo_names": 2090,
+    "unique_nonempty_slugs": 2103
+  },
+  "index_readiness": {
+    "blocker_counts": {
+      "media_ambiguous": 48,
+      "media_unresolved": 5,
+      "shared_photo_across_slugs": 26
+    },
+    "records_blocked": 71,
+    "records_ready": 2032
+  },
+  "media": {
+    "ambiguous": [
+      "03-Silvaner-2022-Barrel-Fermented.webp",
+      "2.webp",
+      "Arie 2020 KFB.webp",
+      "DI CASPICO_BdB.webp",
+      "DI CASPICO_BdN.webp",
+      "Screenshot_10.webp",
+      "Screenshot_11.webp",
+      "Screenshot_16.webp",
+      "Screenshot_17.webp",
+      "Screenshot_18.webp",
+      "Screenshot_19.webp",
+      "Screenshot_2.webp",
+      "Screenshot_20.webp",
+      "Screenshot_21.webp",
+      "Screenshot_22.webp",
+      "Screenshot_3.webp",
+      "Screenshot_4.webp",
+      "Screenshot_7.webp",
+      "Screenshot_9.webp",
+      "ZB Frizzante Rose Semidry.webp",
+      "output_img_021.webp",
+      "output_img_023.webp",
+      "Агора_Мускат.webp",
+      "Алиготе, Цитрон бел.сух.webp",
+      "Брют розовое.webp",
+      "ВБ ЗС Игристое Монро _075 Normal.webp",
+      "Каберне Совиньон.webp",
+      "Красностоп 2024 Classic png.webp",
+      "Мускат.webp",
+      "Пино Гри 2024 png.webp",
+      "Пино Нуар.webp",
+      "Полусладкое белое.webp",
+      "Полусладкое красное.webp",
+      "Полусухое белое.webp",
+      "Фризанте белое сухое.webp",
+      "Фризанте красное полусладкое.webp",
+      "Шардоне.webp",
+      "Эндемы Бианка.webp",
+      "Эндемы Пино Блан.webp",
+      "красностоп.webp",
+      "мерло.webp",
+      "пино нуар.webp",
+      "рислинг.webp",
+      "сов блан.webp"
+    ],
+    "method_counts": {
+      "none": 5,
+      "normalized_name": 1981,
+      "normalized_name_with_embedded_extension": 1,
+      "separator_insensitive_name": 103
+    },
+    "override_count": 0,
+    "photo_names": 2090,
+    "status_counts": {
+      "ambiguous": 44,
+      "resolved": 2041,
+      "unresolved": 5
+    },
+    "unresolved": [
+      {
+        "photo_name": "KATHARON Мезенка: Рислинг полусухое.webp",
+        "review_suggestions": [
+          {
+            "canonical_key": "katharon_kab_fran_suhoe",
+            "similarity": 0.7018,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Katharon_Kab_Fran_suhoe_0ed5f19ec1.webp"
+          },
+          {
+            "canonical_key": "katharon_merlo_suhoe",
+            "similarity": 0.6296,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Katharon_Merlo_suhoe_6947446370.webp"
+          },
+          {
+            "canonical_key": "katharon_risling_2025",
+            "similarity": 0.6182,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Katharon_Risling_2025_983f02b959.webp"
+          }
+        ]
+      },
+      {
+        "photo_name": "KATHARON Мезенка: Рислинг сухое.webp",
+        "review_suggestions": [
+          {
+            "canonical_key": "katharon_merlo_suhoe",
+            "similarity": 0.76,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Katharon_Merlo_suhoe_6947446370.webp"
+          },
+          {
+            "canonical_key": "katharon_kab_fran_suhoe",
+            "similarity": 0.7547,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Katharon_Kab_Fran_suhoe_0ed5f19ec1.webp"
+          },
+          {
+            "canonical_key": "katharon_risling_2025",
+            "similarity": 0.6667,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Katharon_Risling_2025_983f02b959.webp"
+          }
+        ]
+      },
+      {
+        "photo_name": "fanagoriya-fanagoriya-hey-bey-shardone-beloe-suhoe-13.webp",
+        "review_suggestions": [
+          {
+            "canonical_key": "fanagoriya_dekanter_chardonnay_2020_shardone_beloe_suhoe_135",
+            "similarity": 0.7434,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/fanagoriya_dekanter_chardonnay_2020_shardone_beloe_suhoe_135_b72982bc7e.webp"
+          },
+          {
+            "canonical_key": "fanagoriya_sur_lie_chardonnay_shardone_beloe_suhoe_135",
+            "similarity": 0.729,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/fanagoriya_sur_lie_chardonnay_shardone_beloe_suhoe_135_03450c562d.webp"
+          },
+          {
+            "canonical_key": "fanagoriya_100_ottenkov_shardone_beloe_suhoe_14",
+            "similarity": 0.72,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/fanagoriya_100_ottenkov_shardone_beloe_suhoe_14_dd14e33b83.webp"
+          }
+        ]
+      },
+      {
+        "photo_name": "vinodelnya-vedernikov-vedernikov-tsimlyanskiy-chyornyy-tsimlyanskiy-chernyy-krasnoe-suhoe-14.webp",
+        "review_suggestions": [
+          {
+            "canonical_key": "vinodelnya_vedernikov_vedernikov_tsimlyanskiy_chyornyy_bryut_tsimlyanskiy_chernyy_beloe_12",
+            "similarity": 0.8901,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/vinodelnya_vedernikov_vedernikov_tsimlyanskiy_chyornyy_bryut_tsimlyanskiy_chernyy_beloe_12_94126ea6cf.webp"
+          },
+          {
+            "canonical_key": "vinodelnya_vedernikov_vedernikov_tsimlyanskiy_chyornyy_bryut_roze_tsimlyanskiy_chernyy_rozovoe_12",
+            "similarity": 0.8677,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/vinodelnya_vedernikov_vedernikov_tsimlyanskiy_chyornyy_bryut_roze_tsimlyanskiy_chernyy_rozovoe_12_62efb1454a.webp"
+          },
+          {
+            "canonical_key": "vinodelnya_vedernikov_vedernikov_tsimlyanskiy_chyornyy_bryut_roze_2_tsimlyanskiy_chernyy_rozovoe_12",
+            "similarity": 0.8586,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/vinodelnya_vedernikov_vedernikov_tsimlyanskiy_chyornyy_bryut_roze_2_tsimlyanskiy_chernyy_rozovoe_12_f890d2ca11.webp"
+          }
+        ]
+      },
+      {
+        "photo_name": "Вино сухое красное КАБЕРНЕ ФРАН 2021 .webp",
+        "review_suggestions": [
+          {
+            "canonical_key": "vino_suhoe_krasnoe_kaberne_fran",
+            "similarity": 0.9254,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Vino_suhoe_krasnoe_KABERNE_FRAN_3c69650ca3.webp"
+          },
+          {
+            "canonical_key": "vino_polusuhoe_krasnoe_kaberne_fran",
+            "similarity": 0.8732,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Vino_polusuhoe_krasnoe_kaberne_fran_e17d863e68.webp"
+          },
+          {
+            "canonical_key": "vino_suhoe_krasnoe_kaberne_fran_rezerv",
+            "similarity": 0.8649,
+            "suggested_path": "prod-svoe-vino-strapi/prod-svoe-vino/strapi/uploads/Vino_suhoe_krasnoe_KABERNE_FRAN_REZERV_2f6ac9d296.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "schema_version": 1,
+  "sources": [
+    {
+      "bytes": 2952669,
+      "path": "strapi_output0709.csv",
+      "sha256": "12a1b0b620db7a2264b094446861e83940a927708d65a1b7ccffda7ec3aeffee"
+    },
+    {
+      "bytes": 1073741824,
+      "path": "prod-svoe-vino-strapi.part1.rar",
+      "sha256": "e8c356f32a088a67b325bc9a03e731c6c52d7e72d639b456c8e363038f9b38ee"
+    },
+    {
+      "bytes": 1073741824,
+      "path": "prod-svoe-vino-strapi.part2.rar",
+      "sha256": "758b9e45621f93d03b7a1590de4658b99deb4eb1d016da8f2eb19b9f6531aca0"
+    },
+    {
+      "bytes": 97810749,
+      "path": "prod-svoe-vino-strapi.part3.rar",
+      "sha256": "47b1a98a8936fd1785f97c6c55e71357df2b2221c339e6d641fc374209ae7b58"
+    }
+  ]
+}

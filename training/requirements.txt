@@ -1,0 +1,5 @@
+# Install torch separately from the official CPU index; see README.md.
+transformers==4.53.3
+Pillow==11.3.0
+numpy==2.3.2
+onnx==1.18.0

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cifr-inference"
+version = "0.1.0"
+description = "Offline CPU-first wine label recognition API"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "fastapi==0.116.1",
+  "numpy==2.3.2",
+  "Pillow==11.3.0",
+  "python-multipart==0.0.20",
+  "uvicorn[standard]==0.35.0",
+]
+
+[project.optional-dependencies]
+local-features = ["opencv-python-headless==4.14.0.94"]
+neural = ["onnxruntime==1.23.2; python_version < '3.14'"]
+test = [
+  "httpx==0.28.1",
+  "pytest==8.4.1",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["app*"]

@@ -1,0 +1,124 @@
+{
+  "selection": "first100 query-id sorted validation rows per scene type",
+  "test_touched": false,
+  "summary": {
+    "single_reference": {
+      "correct": 56,
+      "total": 100,
+      "accuracy": 0.56,
+      "p50_ms": 10.92,
+      "p95_ms": 17.29,
+      "examples": [
+        {
+          "query_id": "syn-0022ece35ef4c63c21ef",
+          "expected": "vinogradniki-gay-kodzora-rose-cuvee-prestige-de-gai-kodzor-murvedr-rozovoe-suhoe-13",
+          "predicted": "aya-organic-wine-vineyards-purity-in-syrah-sira-rozovoe-suhoe-132"
+        },
+        {
+          "query_id": "syn-019f577b656f61c14354",
+          "expected": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+          "predicted": "vinodelnya-konstantina-dzitoeva-kd-bryut-shardone-beloe-115"
+        },
+        {
+          "query_id": "syn-01dfcf36b0ae2cd97bed",
+          "expected": "esse-ridicule-sira-krasnoe-suhoe-125",
+          "predicted": "vinodelnya-bratev-melnikovyh-kaberne-sovinon-kaberne-fran-dva-brata-krasnoe-suhoe-145"
+        },
+        {
+          "query_id": "syn-031915ba9e8d0b67706b",
+          "expected": "esse-mama-marselan-krasnoe-suhoe-135",
+          "predicted": "vinodelnya-uzunov-krasa-kaberne-sovinon-krasnoe-suhoe-125"
+        },
+        {
+          "query_id": "syn-036ad93153bf2716e14a",
+          "expected": "esse-esse-sira-krasnoe-suhoe-12",
+          "predicted": "esse-kaberne-sovinon-krasnoe-suhoe-14"
+        },
+        {
+          "query_id": "syn-0439ffb8f8b9fc1a225e",
+          "expected": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+          "predicted": "derbent-vino-desono-rkatsiteli-oranzh-beloe-suhoe-125"
+        },
+        {
+          "query_id": "syn-0493d9b77c6fef2518bd",
+          "expected": "stn-winery-pino-nuar-krasnoe-suhoe-12",
+          "predicted": "zhemchuzhnaya-9-kaberne-sovinon-pino-nuar-1"
+        },
+        {
+          "query_id": "syn-04bc46d9ad2ea18969c8",
+          "expected": "gaj-kodzor-rusan",
+          "predicted": "arie-vyderzhka-bochka-francziya-2020"
+        },
+        {
+          "query_id": "syn-06be72d62601980831ac",
+          "expected": "le-k2-vassal-risling-reynskiy-beloe-suhoe-14",
+          "predicted": "vinodelnya-vedernikov-tsimlyanskiy-chernyy-bryut-roze-rozovoe-14"
+        },
+        {
+          "query_id": "syn-07080255d44bbb89f347",
+          "expected": "belmas-winery-riesling-belmas-risling-beloe-suhoe-135",
+          "predicted": "belmas-winery-pinot-gris-belmas-pino-gri-beloe-suhoe-122"
+        }
+      ]
+    },
+    "center_target_three_bottles": {
+      "correct": 2,
+      "total": 100,
+      "accuracy": 0.02,
+      "p50_ms": 15.13,
+      "p95_ms": 20.16,
+      "examples": [
+        {
+          "query_id": "syn-0109ef35af88946f2cb1",
+          "expected": "esse-mama-marselan-krasnoe-suhoe-115",
+          "predicted": "esse-mama-marselan-krasnoe-suhoe-135"
+        },
+        {
+          "query_id": "syn-011d81680e3351caf1a7",
+          "expected": "denisov-winery-petnat-saperavi-severnyy-rozovoe-ekstra-bryut-105",
+          "predicted": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12"
+        },
+        {
+          "query_id": "syn-011fe240f47cc2a9fbb4",
+          "expected": "esse-nectar-muscat-muskat-belyy-beloe-polusuhoe-12",
+          "predicted": "novyj-svet-kaberne"
+        },
+        {
+          "query_id": "syn-01667f2666005c5ddc7d",
+          "expected": "esse-sangiovese-sandzhoveze-krasnoe-suhoe-135",
+          "predicted": "millstream-cellar-blanc-de-blanc-ekstra-bryut-beloe"
+        },
+        {
+          "query_id": "syn-0180b12f029112bc7314",
+          "expected": "denisov-winery-petnat-risling-beloe-ekstra-bryut-10",
+          "predicted": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11"
+        },
+        {
+          "query_id": "syn-0191abf63751b80b2b81",
+          "expected": "imenie-sikory-risling-pozdniy-sbor-beloe-sladkoe-13",
+          "predicted": "vinodelnya-krinitsa-ester-muskat-beloe-suhoe-128"
+        },
+        {
+          "query_id": "syn-01e9e60731cf7cb162f0",
+          "expected": "esse-prirodno-polusladkoe-krasnoe-merlo-13",
+          "predicted": "aristov-anima-pinot-grigio-blush"
+        },
+        {
+          "query_id": "syn-02233dab2944ef1398a7",
+          "expected": "belmas-winery-sauvignon-blanc-katya-sovinon-blan-beloe-suhoe-115",
+          "predicted": "vinnyy-fort-adagum-kokur-belyy-beloe-suhoe-12"
+        },
+        {
+          "query_id": "syn-0228c8319b9821ba0ef3",
+          "expected": "zb-vajn-spumante-polusuhoe-beloe",
+          "predicted": "chteau-le-grand-vostock-aligote-reserve-aligote-beloe-suhoe-13"
+        },
+        {
+          "query_id": "syn-0259171e020e56bf6922",
+          "expected": "belmas-winery-sauvignon-blanc-belmas-sovinon-blan-beloe-suhoe-13",
+          "predicted": "belmas-winery-pg-pino-gri-beloe-suhoe-125"
+        }
+      ]
+    }
+  }
+}

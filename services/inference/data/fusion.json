@@ -1,0 +1,54 @@
+{
+  "model": "conditional-logit-v1",
+  "features": [
+    "v_max",
+    "v_mean",
+    "v_full_bottle",
+    "v_centre_label",
+    "v_gap",
+    "v_rank",
+    "sift_inliers",
+    "sift_matches",
+    "sift_best",
+    "t_score",
+    "t_gap",
+    "t_coverage",
+    "t_style_conflict",
+    "t_style_match",
+    "t_year_conflict",
+    "t_year_match",
+    "t_present",
+    "t_missing"
+  ],
+  "weights": {
+    "v_max": 0.78661,
+    "v_mean": -0.308435,
+    "v_full_bottle": 0.41275,
+    "v_centre_label": 0.41736,
+    "v_gap": -0.23923,
+    "v_rank": 1.603537,
+    "sift_inliers": -0.047674,
+    "sift_matches": 0.101785,
+    "sift_best": 1.395991,
+    "t_score": 0.731499,
+    "t_gap": 0.75734,
+    "t_coverage": 6.453547,
+    "t_style_conflict": -2.918942,
+    "t_style_match": 1.169254,
+    "t_year_conflict": -2.074713,
+    "t_year_match": -1.066511,
+    "t_present": -1.894598,
+    "t_missing": -3.065093
+  },
+  "trained_on": [
+    "evaluation/artifacts/field-v2/fusion_features.jsonl"
+  ],
+  "queries": 1500,
+  "holdout_fraction": 0.0,
+  "not_found_threshold": 0.4534,
+  "augmentation": {
+    "reference_mismatch_fraction": 0.2,
+    "why": "real shelf labels often differ from the small catalogue photo; see training/fit_fusion.py"
+  },
+  "adapter": "data/generated/expanded/siglip/adapter.npy (l2_to_identity=20)"
+}

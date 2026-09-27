@@ -1,0 +1,834 @@
+{
+  "note": "32 deterministic held-out synthetic shelves; baseline and center are visual-only ablations, hybrid_center is actual OCR+visual pipeline; catalogue references remain indexed; not a hidden/real-photo accuracy estimate.",
+  "catalog": "data/generated/catalog/catalog.jsonl",
+  "index": "data/generated/index/index_manifest.json",
+  "results": [
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-010f7990f7897e75bd74",
+      "expected_slug": "valeriy-zaharin-avtorskoe-vino-ot-valeriya-zaharina-krasnoe-pino-nuar-suhoe-125",
+      "predicted_slug": "leto-risling-2024-polusuhoe-vino",
+      "correct": false,
+      "latency_ms": 10.45
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-03b46c395803cd94be02",
+      "expected_slug": "vinodelnya-berdyaeva-kaberne-fran-krasnoe-suhoe-115",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 11.33
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-041fc9a5b9bf6cead961",
+      "expected_slug": "valeriy-zaharin-bakkal-su-aligote-beloe-suhoe-115",
+      "predicted_slug": "kaberne-sovinon-appasimento",
+      "correct": false,
+      "latency_ms": 10.05
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-04acf1cefc1364826a8a",
+      "expected_slug": "vinodelnya-uzunov-mono-kaberne-sovinon-krasnoe-suhoe-139",
+      "predicted_slug": "opium",
+      "correct": false,
+      "latency_ms": 10.15
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-05f459825da12e8e8a66",
+      "expected_slug": "cantiani-cabernet-sauvignon-merlot",
+      "predicted_slug": "lorio-sovinon-blan-2025",
+      "correct": false,
+      "latency_ms": 10.29
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-09448fe356cc74efeaea",
+      "expected_slug": "vinodelnya-uzunov-bunt-tsitronnyy-magaracha-beloe-suhoe-132",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 9.91
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0a1aa1af8541ebba3e8d",
+      "expected_slug": "solnechnaya-dolina-meganom-kokur-beloe-bryut",
+      "predicted_slug": "vinodelnya-bratev-melnikovyh-pino-dva-brata-pino-gri-rozovoe-suhoe-13",
+      "correct": false,
+      "latency_ms": 10.73
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0ada125fe828adc3e236",
+      "expected_slug": "sary-pandas-vyderzhannoe",
+      "predicted_slug": "belbek-pino-nuar-roze-rozovoe-suhoe-115",
+      "correct": false,
+      "latency_ms": 11.96
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0b174a606786ddd0554a",
+      "expected_slug": "usadba-aleksandrovskaya-bubnovyy-valet-kaberne-sovinon-krasnoe-polusladkoe-13",
+      "predicted_slug": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+      "correct": false,
+      "latency_ms": 10.09
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0b45c543cedced4471c8",
+      "expected_slug": "cantiani-chardonnay",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 10.5
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0bdde3e57602fb25045c",
+      "expected_slug": "cantiani-cabernet-sauvignon-reserve-2024",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 10.07
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0c6b7f02eb5626da06b6",
+      "expected_slug": "valeriy-zaharin-sovinon-blan-valeriy-zaharin-beloe-polusladkoe-105",
+      "predicted_slug": "shato-pino-pino-gridzhio-beloe-suhoe-12",
+      "correct": false,
+      "latency_ms": 9.34
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0d221f665a83990d6c85",
+      "expected_slug": "valeriy-zaharin-traminer-burlyuk-traminer-rozovyy-beloe-suhoe-135",
+      "predicted_slug": "soyuz-vino-gloriya-de-luna-byanko-sekko-shardone-beloe-suhoe-11",
+      "correct": false,
+      "latency_ms": 10.18
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0daba28b4592105c7e69",
+      "expected_slug": "perovskih_polusladkoe_krasnoe",
+      "predicted_slug": "sober-bash-trezvaya-golova-rozovoe-krasnostop-zolotovskiy-suhoe-115",
+      "correct": false,
+      "latency_ms": 9.94
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0e361f83939738cdc435",
+      "expected_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "predicted_slug": "lorio-sovinon-blan-2025",
+      "correct": false,
+      "latency_ms": 9.92
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0eadf136529aaf8464dd",
+      "expected_slug": "cantiani-cabernet-sauvignon-reserve-2024",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-ekstra-bryut-beloe-novyy-svet-aligote-13",
+      "correct": false,
+      "latency_ms": 9.73
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0ec19c79cea86cf4fc65",
+      "expected_slug": "perovskih_polusladkoe_beloe",
+      "predicted_slug": "dva-serdtsa-vione-beloe-suhoe-125",
+      "correct": false,
+      "latency_ms": 12.13
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0ed98b226d6413fa5d11",
+      "expected_slug": "perovskih_blan_de_noir",
+      "predicted_slug": "dva-serdtsa-muskat-muskat-belyy-beloe-polusuhoe-12",
+      "correct": false,
+      "latency_ms": 10.47
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-0fca22e1704895ec01ab",
+      "expected_slug": "cantiani-rkatsiteli",
+      "predicted_slug": "dva-serdtsa-kokur-beloe-suhoe-125",
+      "correct": false,
+      "latency_ms": 10.3
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-1066aa4f8b0b559dc082",
+      "expected_slug": "vinodelnya-berdyaeva-kaberne-fran-krasnoe-suhoe-115",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 10.19
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-11cb9fa72999c38d1592",
+      "expected_slug": "vinodelnya-uzunov-sovinon-blan-beloe-suhoe-125",
+      "predicted_slug": "chateau-tamagne-grand-dessert-muscat",
+      "correct": false,
+      "latency_ms": 11.11
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-1330cf12e927c0efa269",
+      "expected_slug": "portvejn-krymskij",
+      "predicted_slug": "belbek-aligote-beloe-suhoe-125",
+      "correct": false,
+      "latency_ms": 12.22
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-14d497589d05a9c267bc",
+      "expected_slug": "vinodelnya-uzunov-nrav-rezerv-krasnostop-zolotovskiy-krasnoe-suhoe-139",
+      "predicted_slug": "chateau-andre-tsvaygelt-roze-rozovoe-suhoe-13",
+      "correct": false,
+      "latency_ms": 9.41
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-14e8557bedc3b8508f28",
+      "expected_slug": "cantiani-brut",
+      "predicted_slug": "novyj-svet-aligote",
+      "correct": false,
+      "latency_ms": 9.77
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-15fd9ee515a038cd79a3",
+      "expected_slug": "vinodelnya-uzunov-sovinon-kukuoba-sovinon-blan-beloe-ekstra-bryut-12",
+      "predicted_slug": "vinnyy-fort-adagum-kokur-belyy-beloe-suhoe-12",
+      "correct": false,
+      "latency_ms": 9.84
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-161f09556e21713c4b33",
+      "expected_slug": "cantiani-saperavi-merlot",
+      "predicted_slug": "novyj-svet-kaberne",
+      "correct": false,
+      "latency_ms": 9.5
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-17daac87f3efb3f16f36",
+      "expected_slug": "valeriy-zaharin-sira-valeriy-zaharin-krasnoe-polusladkoe-125",
+      "predicted_slug": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+      "correct": false,
+      "latency_ms": 9.98
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-1854e881057e3cddea5f",
+      "expected_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "predicted_slug": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+      "correct": false,
+      "latency_ms": 10.68
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-1ab4565999f45afcb5d6",
+      "expected_slug": "solnechnaya-dolina-meganom-kyuve-shardone-beloe-bryut-11",
+      "predicted_slug": "opium",
+      "correct": false,
+      "latency_ms": 9.95
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-1b22a54349ca4ceaa80c",
+      "expected_slug": "valeriy-zaharin-risling-valeriy-zaharin-risling-reynskiy-beloe-polusladkoe-125",
+      "predicted_slug": "belbek-aligote-beloe-suhoe-125",
+      "correct": false,
+      "latency_ms": 9.49
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-1b8f287e0cbda2cde5fd",
+      "expected_slug": "valeriy-zaharin-albedo-reserve-sary-pandas-beloe-suhoe-115",
+      "predicted_slug": "belbek-aligote-beloe-suhoe-125",
+      "correct": false,
+      "latency_ms": 10.19
+    },
+    {
+      "pipeline": "baseline",
+      "query_id": "syn-1c14f085018b0608ebb2",
+      "expected_slug": "perovskih_blan_de_noir",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-kollektsionnoe-bryut-beloe-novyy-svet-yubileynoe-risling-13",
+      "correct": false,
+      "latency_ms": 10.57
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-010f7990f7897e75bd74",
+      "expected_slug": "valeriy-zaharin-avtorskoe-vino-ot-valeriya-zaharina-krasnoe-pino-nuar-suhoe-125",
+      "predicted_slug": "katharon-mezenka-sira",
+      "correct": false,
+      "latency_ms": 8.13
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-03b46c395803cd94be02",
+      "expected_slug": "vinodelnya-berdyaeva-kaberne-fran-krasnoe-suhoe-115",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 9.22
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-041fc9a5b9bf6cead961",
+      "expected_slug": "valeriy-zaharin-bakkal-su-aligote-beloe-suhoe-115",
+      "predicted_slug": "kaberne-sovinon-appasimento",
+      "correct": false,
+      "latency_ms": 9.44
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-04acf1cefc1364826a8a",
+      "expected_slug": "vinodelnya-uzunov-mono-kaberne-sovinon-krasnoe-suhoe-139",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-ekstra-bryut-beloe-novyy-svet-kokur-11",
+      "correct": false,
+      "latency_ms": 8.77
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-05f459825da12e8e8a66",
+      "expected_slug": "cantiani-cabernet-sauvignon-merlot",
+      "predicted_slug": "lorio-sovinon-blan-2025",
+      "correct": false,
+      "latency_ms": 8.99
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-09448fe356cc74efeaea",
+      "expected_slug": "vinodelnya-uzunov-bunt-tsitronnyy-magaracha-beloe-suhoe-132",
+      "predicted_slug": "vinodelnya-uzunov-bunt-tsitronnyy-magaracha-beloe-suhoe-132",
+      "correct": true,
+      "latency_ms": 8.21
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0a1aa1af8541ebba3e8d",
+      "expected_slug": "solnechnaya-dolina-meganom-kokur-beloe-bryut",
+      "predicted_slug": "wine-1",
+      "correct": false,
+      "latency_ms": 8.15
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0ada125fe828adc3e236",
+      "expected_slug": "sary-pandas-vyderzhannoe",
+      "predicted_slug": "vino-suhoe-krasnoe-endemy-saperavi",
+      "correct": false,
+      "latency_ms": 8.9
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0b174a606786ddd0554a",
+      "expected_slug": "usadba-aleksandrovskaya-bubnovyy-valet-kaberne-sovinon-krasnoe-polusladkoe-13",
+      "predicted_slug": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+      "correct": false,
+      "latency_ms": 8.3
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0b45c543cedced4471c8",
+      "expected_slug": "cantiani-chardonnay",
+      "predicted_slug": "derbent-vino-desono-risling-ekstra-bryut-beloe-105-125",
+      "correct": false,
+      "latency_ms": 8.56
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0bdde3e57602fb25045c",
+      "expected_slug": "cantiani-cabernet-sauvignon-reserve-2024",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 8.45
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0c6b7f02eb5626da06b6",
+      "expected_slug": "valeriy-zaharin-sovinon-blan-valeriy-zaharin-beloe-polusladkoe-105",
+      "predicted_slug": "shato-pino-klassika-sauvignon-blanc",
+      "correct": false,
+      "latency_ms": 20.79
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0d221f665a83990d6c85",
+      "expected_slug": "valeriy-zaharin-traminer-burlyuk-traminer-rozovyy-beloe-suhoe-135",
+      "predicted_slug": "vinodelnya-batrak-perfekt-klassik-muskat-belyy-beloe-suhoe-125",
+      "correct": false,
+      "latency_ms": 9.45
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0daba28b4592105c7e69",
+      "expected_slug": "perovskih_polusladkoe_krasnoe",
+      "predicted_slug": "villa-urkusta-kaberne-sovinon-klaret-rozovoe-polusuhoe-15",
+      "correct": false,
+      "latency_ms": 8.94
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0e361f83939738cdc435",
+      "expected_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "predicted_slug": "lorio-sovinon-blan-2025",
+      "correct": false,
+      "latency_ms": 9.3
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0eadf136529aaf8464dd",
+      "expected_slug": "cantiani-cabernet-sauvignon-reserve-2024",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 8.48
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0ec19c79cea86cf4fc65",
+      "expected_slug": "perovskih_polusladkoe_beloe",
+      "predicted_slug": "vino-suhoe-krasnoe-endemy-saperavi",
+      "correct": false,
+      "latency_ms": 9.05
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0ed98b226d6413fa5d11",
+      "expected_slug": "perovskih_blan_de_noir",
+      "predicted_slug": "rem-akchurin-shardone-beloe-bryut-14",
+      "correct": false,
+      "latency_ms": 8.96
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-0fca22e1704895ec01ab",
+      "expected_slug": "cantiani-rkatsiteli",
+      "predicted_slug": "usadba-mezyb-staraya-doroga-na-dzhanhot-kaberne-sovinon-kaberne-fran-krasnoe-suhoe-144",
+      "correct": false,
+      "latency_ms": 8.35
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-1066aa4f8b0b559dc082",
+      "expected_slug": "vinodelnya-berdyaeva-kaberne-fran-krasnoe-suhoe-115",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 8.31
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-11cb9fa72999c38d1592",
+      "expected_slug": "vinodelnya-uzunov-sovinon-blan-beloe-suhoe-125",
+      "predicted_slug": "zolotoe-pole-legend-of-crimea-chardonnay-shardone-beloe-suhoe-13",
+      "correct": false,
+      "latency_ms": 8.67
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-1330cf12e927c0efa269",
+      "expected_slug": "portvejn-krymskij",
+      "predicted_slug": "kaberne-sovinon-1",
+      "correct": false,
+      "latency_ms": 12.47
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-14d497589d05a9c267bc",
+      "expected_slug": "vinodelnya-uzunov-nrav-rezerv-krasnostop-zolotovskiy-krasnoe-suhoe-139",
+      "predicted_slug": "chateau-andre-tsvaygelt-roze-rozovoe-suhoe-13",
+      "correct": false,
+      "latency_ms": 10.16
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-14e8557bedc3b8508f28",
+      "expected_slug": "cantiani-brut",
+      "predicted_slug": "rozovoe-bryut-spumante",
+      "correct": false,
+      "latency_ms": 13.22
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-15fd9ee515a038cd79a3",
+      "expected_slug": "vinodelnya-uzunov-sovinon-kukuoba-sovinon-blan-beloe-ekstra-bryut-12",
+      "predicted_slug": "vinnyy-fort-adagum-kokur-belyy-beloe-suhoe-12",
+      "correct": false,
+      "latency_ms": 9.6
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-161f09556e21713c4b33",
+      "expected_slug": "cantiani-saperavi-merlot",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 9.09
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-17daac87f3efb3f16f36",
+      "expected_slug": "valeriy-zaharin-sira-valeriy-zaharin-krasnoe-polusladkoe-125",
+      "predicted_slug": "shato-pino-klassika-sauvignon-blanc",
+      "correct": false,
+      "latency_ms": 8.89
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-1854e881057e3cddea5f",
+      "expected_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "predicted_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "correct": true,
+      "latency_ms": 8.96
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-1ab4565999f45afcb5d6",
+      "expected_slug": "solnechnaya-dolina-meganom-kyuve-shardone-beloe-bryut-11",
+      "predicted_slug": "solnechnaya-dolina-meganom-kyuve-shardone-beloe-bryut-11",
+      "correct": true,
+      "latency_ms": 8.54
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-1b22a54349ca4ceaa80c",
+      "expected_slug": "valeriy-zaharin-risling-valeriy-zaharin-risling-reynskiy-beloe-polusladkoe-125",
+      "predicted_slug": "shardone-barrel-2023",
+      "correct": false,
+      "latency_ms": 8.9
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-1b8f287e0cbda2cde5fd",
+      "expected_slug": "valeriy-zaharin-albedo-reserve-sary-pandas-beloe-suhoe-115",
+      "predicted_slug": "derbent-vino-endemy-pino-nuar-rozovoe-bryut-105-125",
+      "correct": false,
+      "latency_ms": 9.0
+    },
+    {
+      "pipeline": "center",
+      "query_id": "syn-1c14f085018b0608ebb2",
+      "expected_slug": "perovskih_blan_de_noir",
+      "predicted_slug": "tsimlyanskie-vina-tsimlyanskoe-kaberne-sovinon-ekstra-bryut-rozovoe-13",
+      "correct": false,
+      "latency_ms": 9.22
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-010f7990f7897e75bd74",
+      "expected_slug": "valeriy-zaharin-avtorskoe-vino-ot-valeriya-zaharina-krasnoe-pino-nuar-suhoe-125",
+      "predicted_slug": "katharon-mezenka-sira",
+      "correct": false,
+      "latency_ms": 407.31,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-03b46c395803cd94be02",
+      "expected_slug": "vinodelnya-berdyaeva-kaberne-fran-krasnoe-suhoe-115",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 266.02,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-041fc9a5b9bf6cead961",
+      "expected_slug": "valeriy-zaharin-bakkal-su-aligote-beloe-suhoe-115",
+      "predicted_slug": "kaberne-sovinon-appasimento",
+      "correct": false,
+      "latency_ms": 313.52,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-04acf1cefc1364826a8a",
+      "expected_slug": "vinodelnya-uzunov-mono-kaberne-sovinon-krasnoe-suhoe-139",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-ekstra-bryut-beloe-novyy-svet-kokur-11",
+      "correct": false,
+      "latency_ms": 249.25,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-05f459825da12e8e8a66",
+      "expected_slug": "cantiani-cabernet-sauvignon-merlot",
+      "predicted_slug": "lorio-sovinon-blan-2025",
+      "correct": false,
+      "latency_ms": 319.5,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-09448fe356cc74efeaea",
+      "expected_slug": "vinodelnya-uzunov-bunt-tsitronnyy-magaracha-beloe-suhoe-132",
+      "predicted_slug": "vinodelnya-uzunov-bunt-tsitronnyy-magaracha-beloe-suhoe-132",
+      "correct": true,
+      "latency_ms": 269.15,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0a1aa1af8541ebba3e8d",
+      "expected_slug": "solnechnaya-dolina-meganom-kokur-beloe-bryut",
+      "predicted_slug": "wine-1",
+      "correct": false,
+      "latency_ms": 296.62,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0ada125fe828adc3e236",
+      "expected_slug": "sary-pandas-vyderzhannoe",
+      "predicted_slug": "solnechnaya-dolina-meganom-kokur-beloe-bryut",
+      "correct": false,
+      "latency_ms": 180.94,
+      "method": "ocr"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0b174a606786ddd0554a",
+      "expected_slug": "usadba-aleksandrovskaya-bubnovyy-valet-kaberne-sovinon-krasnoe-polusladkoe-13",
+      "predicted_slug": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+      "correct": false,
+      "latency_ms": 433.81,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0b45c543cedced4471c8",
+      "expected_slug": "cantiani-chardonnay",
+      "predicted_slug": "derbent-vino-desono-risling-ekstra-bryut-beloe-105-125",
+      "correct": false,
+      "latency_ms": 386.49,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0bdde3e57602fb25045c",
+      "expected_slug": "cantiani-cabernet-sauvignon-reserve-2024",
+      "predicted_slug": "cantiani-aligote-riesling",
+      "correct": false,
+      "latency_ms": 162.26,
+      "method": "ocr"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0c6b7f02eb5626da06b6",
+      "expected_slug": "valeriy-zaharin-sovinon-blan-valeriy-zaharin-beloe-polusladkoe-105",
+      "predicted_slug": "valerij-zaharin-kokur-i-ko-beloe-bryut",
+      "correct": false,
+      "latency_ms": 163.65,
+      "method": "ocr"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0d221f665a83990d6c85",
+      "expected_slug": "valeriy-zaharin-traminer-burlyuk-traminer-rozovyy-beloe-suhoe-135",
+      "predicted_slug": "agrolayn-mountain-eagle-traminer-traminer-beloe-suhoe-12",
+      "correct": false,
+      "latency_ms": 375.84,
+      "method": "ocr"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0daba28b4592105c7e69",
+      "expected_slug": "perovskih_polusladkoe_krasnoe",
+      "predicted_slug": "villa-urkusta-kaberne-sovinon-klaret-rozovoe-polusuhoe-15",
+      "correct": false,
+      "latency_ms": 411.43,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0e361f83939738cdc435",
+      "expected_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "predicted_slug": "lorio-sovinon-blan-2025",
+      "correct": false,
+      "latency_ms": 380.55,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0eadf136529aaf8464dd",
+      "expected_slug": "cantiani-cabernet-sauvignon-reserve-2024",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 360.88,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0ec19c79cea86cf4fc65",
+      "expected_slug": "perovskih_polusladkoe_beloe",
+      "predicted_slug": "vino-suhoe-krasnoe-endemy-saperavi",
+      "correct": false,
+      "latency_ms": 296.27,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0ed98b226d6413fa5d11",
+      "expected_slug": "perovskih_blan_de_noir",
+      "predicted_slug": "rem-akchurin-shardone-beloe-bryut-14",
+      "correct": false,
+      "latency_ms": 255.8,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-0fca22e1704895ec01ab",
+      "expected_slug": "cantiani-rkatsiteli",
+      "predicted_slug": "usadba-mezyb-staraya-doroga-na-dzhanhot-kaberne-sovinon-kaberne-fran-krasnoe-suhoe-144",
+      "correct": false,
+      "latency_ms": 453.11,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-1066aa4f8b0b559dc082",
+      "expected_slug": "vinodelnya-berdyaeva-kaberne-fran-krasnoe-suhoe-115",
+      "predicted_slug": "novyy-svet-dom-shampanskih-vin-rossiyskoe-shampanskoe-vyderzhannoe-bryut-rozovoe-novyy-svet-kaberne-kaberne-sovinon-11",
+      "correct": false,
+      "latency_ms": 303.88,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-11cb9fa72999c38d1592",
+      "expected_slug": "vinodelnya-uzunov-sovinon-blan-beloe-suhoe-125",
+      "predicted_slug": "zolotoe-pole-legend-of-crimea-chardonnay-shardone-beloe-suhoe-13",
+      "correct": false,
+      "latency_ms": 293.63,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-1330cf12e927c0efa269",
+      "expected_slug": "portvejn-krymskij",
+      "predicted_slug": "massandra-portveyn-belyy-alushta-belye-sorta-vinograda-beloe-sladkoe-17",
+      "correct": false,
+      "latency_ms": 178.15,
+      "method": "ocr"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-14d497589d05a9c267bc",
+      "expected_slug": "vinodelnya-uzunov-nrav-rezerv-krasnostop-zolotovskiy-krasnoe-suhoe-139",
+      "predicted_slug": "chateau-andre-tsvaygelt-roze-rozovoe-suhoe-13",
+      "correct": false,
+      "latency_ms": 254.82,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-14e8557bedc3b8508f28",
+      "expected_slug": "cantiani-brut",
+      "predicted_slug": "rozovoe-bryut-spumante",
+      "correct": false,
+      "latency_ms": 298.94,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-15fd9ee515a038cd79a3",
+      "expected_slug": "vinodelnya-uzunov-sovinon-kukuoba-sovinon-blan-beloe-ekstra-bryut-12",
+      "predicted_slug": "vinnyy-fort-adagum-kokur-belyy-beloe-suhoe-12",
+      "correct": false,
+      "latency_ms": 279.01,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-161f09556e21713c4b33",
+      "expected_slug": "cantiani-saperavi-merlot",
+      "predicted_slug": "cantiani-aligote-riesling",
+      "correct": false,
+      "latency_ms": 478.32,
+      "method": "ocr"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-17daac87f3efb3f16f36",
+      "expected_slug": "valeriy-zaharin-sira-valeriy-zaharin-krasnoe-polusladkoe-125",
+      "predicted_slug": "shato-pino-klassika-sauvignon-blanc",
+      "correct": false,
+      "latency_ms": 280.51,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-1854e881057e3cddea5f",
+      "expected_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "predicted_slug": "solnechnaya-dolina-meganom-beloe-aligote-suhoe-13",
+      "correct": true,
+      "latency_ms": 373.04,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-1ab4565999f45afcb5d6",
+      "expected_slug": "solnechnaya-dolina-meganom-kyuve-shardone-beloe-bryut-11",
+      "predicted_slug": "solnechnaya-dolina-meganom-kyuve-shardone-beloe-bryut-11",
+      "correct": true,
+      "latency_ms": 287.58,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-1b22a54349ca4ceaa80c",
+      "expected_slug": "valeriy-zaharin-risling-valeriy-zaharin-risling-reynskiy-beloe-polusladkoe-125",
+      "predicted_slug": "shardone-barrel-2023",
+      "correct": false,
+      "latency_ms": 296.09,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-1b8f287e0cbda2cde5fd",
+      "expected_slug": "valeriy-zaharin-albedo-reserve-sary-pandas-beloe-suhoe-115",
+      "predicted_slug": "derbent-vino-endemy-pino-nuar-rozovoe-bryut-105-125",
+      "correct": false,
+      "latency_ms": 305.72,
+      "method": "visual"
+    },
+    {
+      "pipeline": "hybrid_center",
+      "query_id": "syn-1c14f085018b0608ebb2",
+      "expected_slug": "perovskih_blan_de_noir",
+      "predicted_slug": "tsimlyanskie-vina-tsimlyanskoe-kaberne-sovinon-ekstra-bryut-rozovoe-13",
+      "correct": false,
+      "latency_ms": 270.04,
+      "method": "visual"
+    }
+  ],
+  "selection": "First32 query_id-sorted test split center_target_three_bottles rows from evaluation/artifacts/training-v3/queries.jsonl",
+  "baseline_revision": "fdafeabe67f5befeb5acd2356a8b32738c4110e8",
+  "manifest_sha256": "d6602bea9fbbb6a91ff147182abe36673afbaad7a0eb4b65044f9e4104270460",
+  "summary": {
+    "baseline": {
+      "correct": 0,
+      "total": 32
+    },
+    "center": {
+      "correct": 3,
+      "total": 32
+    },
+    "hybrid_center": {
+      "correct": 3,
+      "total": 32,
+      "accuracy": 0.09375,
+      "p50_ms": 296.445,
+      "p95_ms": 453.11
+    }
+  },
+  "limitation": "Handcrafted color/grid descriptors remain weak on synthetic multi-bottle scenes. No parameter tuning was performed on this held-out subset.",
+  "hybrid_note": "Actual OCR+visual center pipeline, same32 frozen test shelf cases and official default index/catalog. Cold uncached predictions, excludes engine loading and image decoding; p95 nearest rank. No parameter tuning.",
+  "hybrid_environment": {
+    "OMP_THREAD_LIMIT": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "cache": "disabled by not passing payload hash"
+  }
+}

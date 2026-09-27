@@ -1,0 +1,1837 @@
+{
+  "selection": "same first100 validation per scene used by local feature experiment",
+  "test_touched": false,
+  "engine_load_seconds": 8.143,
+  "peak_rss_mb": 2032.7,
+  "summary": {
+    "all": {
+      "count": 200,
+      "correct": 188,
+      "accuracy": 0.94,
+      "local_accepts": 162,
+      "local_errors": 0,
+      "p50_ms": 97.377,
+      "p95_ms": 156.338
+    },
+    "single_reference": {
+      "count": 100,
+      "correct": 93,
+      "accuracy": 0.93,
+      "local_accepts": 79,
+      "local_errors": 0,
+      "p50_ms": 88.945,
+      "p95_ms": 172.316
+    },
+    "center_target_three_bottles": {
+      "count": 100,
+      "correct": 95,
+      "accuracy": 0.95,
+      "local_accepts": 83,
+      "local_errors": 0,
+      "p50_ms": 100.042,
+      "p95_ms": 130.597
+    }
+  },
+  "results": [
+    {
+      "query_id": "syn-0022ece35ef4c63c21ef",
+      "scene_type": "single_reference",
+      "expected": "vinogradniki-gay-kodzora-rose-cuvee-prestige-de-gai-kodzor-murvedr-rozovoe-suhoe-13",
+      "predicted": "vinogradniki-gay-kodzora-rose-cuvee-prestige-de-gai-kodzor-murvedr-rozovoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 91.317
+    },
+    {
+      "query_id": "syn-00d7dcac38e02a279cb6",
+      "scene_type": "single_reference",
+      "expected": "vinogradniki-gay-kodzora-elegance-rose-de-gai-kodzor-sira-rozovoe-suhoe-125",
+      "predicted": "vinogradniki-gay-kodzora-elegance-rose-de-gai-kodzor-sira-rozovoe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 140.552
+    },
+    {
+      "query_id": "syn-017b1ad0a9e88e0c3a29",
+      "scene_type": "single_reference",
+      "expected": "solnechnaya-dolina-privat-kaberne-sovinon-krasnoe-sladkoe-155",
+      "predicted": "solnechnaya-dolina-privat-kaberne-sovinon-krasnoe-sladkoe-155",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 135.935
+    },
+    {
+      "query_id": "syn-019f577b656f61c14354",
+      "scene_type": "single_reference",
+      "expected": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+      "predicted": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 253.451
+    },
+    {
+      "query_id": "syn-01a459569ca6ea77d05f",
+      "scene_type": "single_reference",
+      "expected": "vinodelnya-pokrovskaya-pokrovskoe-krasnoe-kaberne-sovinon-suhoe-14",
+      "predicted": "vinodelnya-pokrovskaya-pokrovskoe-krasnoe-kaberne-sovinon-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 108.761
+    },
+    {
+      "query_id": "syn-01dfcf36b0ae2cd97bed",
+      "scene_type": "single_reference",
+      "expected": "esse-ridicule-sira-krasnoe-suhoe-125",
+      "predicted": "esse-ridicule-sira-krasnoe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 59.544
+    },
+    {
+      "query_id": "syn-0207906f45a3826c7584",
+      "scene_type": "single_reference",
+      "expected": "esse-pino-nuar-krasnoe-suhoe-115",
+      "predicted": "esse-pino-nuar-krasnoe-suhoe-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 46.432
+    },
+    {
+      "query_id": "syn-02131aad0158b2fc8666",
+      "scene_type": "single_reference",
+      "expected": "denisov_barynya_kurmyshi",
+      "predicted": "denisov_barynya_kurmyshi",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 111.974
+    },
+    {
+      "query_id": "syn-0309a79f5e0a9a390103",
+      "scene_type": "single_reference",
+      "expected": "solnechnaya-dolina-meganom-blanc-de-blancs-kokur-beloe-bryut-11",
+      "predicted": "solnechnaya-dolina-meganom-blanc-de-blancs-kokur-beloe-bryut-11",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 110.824
+    },
+    {
+      "query_id": "syn-031915ba9e8d0b67706b",
+      "scene_type": "single_reference",
+      "expected": "esse-mama-marselan-krasnoe-suhoe-135",
+      "predicted": "esse-mama-marselan-krasnoe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 88.875
+    },
+    {
+      "query_id": "syn-03312055368c7366cbdc",
+      "scene_type": "single_reference",
+      "expected": "le-k2-temnaya-roza-sira-rozovoe-suhoe-13",
+      "predicted": "le-k2-temnaya-roza-sira-rozovoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 112.992
+    },
+    {
+      "query_id": "syn-0350786ce4b147601aec",
+      "scene_type": "single_reference",
+      "expected": "esse-saperavi-heaven-krasnoe-suhoe-13",
+      "predicted": "esse-saperavi-heaven-krasnoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 103.787
+    },
+    {
+      "query_id": "syn-036ad93153bf2716e14a",
+      "scene_type": "single_reference",
+      "expected": "esse-esse-sira-krasnoe-suhoe-12",
+      "predicted": "esse-kaberne-sovinon-krasnoe-suhoe-14",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 48.11
+    },
+    {
+      "query_id": "syn-043578a2a52765018ada",
+      "scene_type": "single_reference",
+      "expected": "sary-pandas-vyderzhannoe",
+      "predicted": "sary-pandas-vyderzhannoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 141.846
+    },
+    {
+      "query_id": "syn-0439ffb8f8b9fc1a225e",
+      "scene_type": "single_reference",
+      "expected": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+      "predicted": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 163.278
+    },
+    {
+      "query_id": "syn-0493d9b77c6fef2518bd",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-pino-nuar-krasnoe-suhoe-12",
+      "predicted": "stn-winery-pino-nuar-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 52.449
+    },
+    {
+      "query_id": "syn-04bc46d9ad2ea18969c8",
+      "scene_type": "single_reference",
+      "expected": "gaj-kodzor-rusan",
+      "predicted": "gaj-kodzor-rusan",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 115.57
+    },
+    {
+      "query_id": "syn-0560eed0179b4bfc91f9",
+      "scene_type": "single_reference",
+      "expected": "esse-ridicule-sira-krasnoe-suhoe-125",
+      "predicted": "esse-ridicule-sira-krasnoe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 48.536
+    },
+    {
+      "query_id": "syn-05dc988ceac407c6b6b2",
+      "scene_type": "single_reference",
+      "expected": "esse-esse-grand-cuvee-60-shardone-beloe-ekstra-bryut-115",
+      "predicted": "esse-esse-grand-cuvee-60-shardone-beloe-ekstra-bryut-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 102.294
+    },
+    {
+      "query_id": "syn-05ebaca1bec62873d53c",
+      "scene_type": "single_reference",
+      "expected": "le-k2-kamenolomnya-sira-krasnoe-suhoe-145",
+      "predicted": "le-k2-kamenolomnya-sira-krasnoe-suhoe-145",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 78.662
+    },
+    {
+      "query_id": "syn-0669f3ac645ff2b93881",
+      "scene_type": "single_reference",
+      "expected": "polusladkoe-rozovoe-zolotaya-balka",
+      "predicted": "polusladkoe-rozovoe-zolotaya-balka",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 81.595
+    },
+    {
+      "query_id": "syn-066aec716029e162a183",
+      "scene_type": "single_reference",
+      "expected": "esse-rubinovyy-rubinovyy-magaracha-krasnoe-suhoe-12",
+      "predicted": "esse-rubinovyy-rubinovyy-magaracha-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 44.583
+    },
+    {
+      "query_id": "syn-06be72d62601980831ac",
+      "scene_type": "single_reference",
+      "expected": "le-k2-vassal-risling-reynskiy-beloe-suhoe-14",
+      "predicted": "le-k2-vassal-risling-reynskiy-beloe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 71.809
+    },
+    {
+      "query_id": "syn-0707cb22cb14f1055264",
+      "scene_type": "single_reference",
+      "expected": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-127",
+      "predicted": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-127",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 60.854
+    },
+    {
+      "query_id": "syn-07080255d44bbb89f347",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-riesling-belmas-risling-beloe-suhoe-135",
+      "predicted": "belmas-winery-riesling-belmas-risling-beloe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 41.87
+    },
+    {
+      "query_id": "syn-075cef1e82394c9020b1",
+      "scene_type": "single_reference",
+      "expected": "zb-vajn-moskato-polusladkoe-beloe",
+      "predicted": "zb-vajn-moskato-polusladkoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 126.101
+    },
+    {
+      "query_id": "syn-0766024fa1d6524d891c",
+      "scene_type": "single_reference",
+      "expected": "zolotaya-balka-zb-frizzante-semi-dry-rose-risling-rozovoe-polusuhoe-10",
+      "predicted": "zolotaya-balka-zb-frizzante-semi-dry-rose-risling-rozovoe-polusuhoe-10",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 97.32
+    },
+    {
+      "query_id": "syn-07b2207c6cbf5864ccd6",
+      "scene_type": "single_reference",
+      "expected": "polusuhoe-beloe-zolotaya-balka",
+      "predicted": "polusuhoe-beloe-zolotaya-balka",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 60.734
+    },
+    {
+      "query_id": "syn-07b5f531d0c608907f5e",
+      "scene_type": "single_reference",
+      "expected": "imenie-sikory-risling-semeynyy-rezerv-risling-reynskiy-beloe-suhoe-13",
+      "predicted": "imenie-sikory-risling-semeynyy-rezerv-risling-reynskiy-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 79.586
+    },
+    {
+      "query_id": "syn-07cf627746136a3cb653",
+      "scene_type": "single_reference",
+      "expected": "beloe-suhoe",
+      "predicted": "beloe-suhoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 103.238
+    },
+    {
+      "query_id": "syn-07e773e39a002d405123",
+      "scene_type": "single_reference",
+      "expected": "imenie-sikory-pino-nuar-semeynyy-rezerv-krasnoe-suhoe-14",
+      "predicted": "imenie-sikory-pino-nuar-semeynyy-rezerv-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 117.605
+    },
+    {
+      "query_id": "syn-08440f1ba533ef26ca67",
+      "scene_type": "single_reference",
+      "expected": "esse-odessa-black-odesskiy-chernyy-krasnoe-suhoe-12",
+      "predicted": "esse-odessa-black-odesskiy-chernyy-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 84.228
+    },
+    {
+      "query_id": "syn-0859d6bec737c1973b9d",
+      "scene_type": "single_reference",
+      "expected": "zb-vajn-spumante-polusuhoe-beloe",
+      "predicted": "zb-vajn-spumante-polusuhoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 144.161
+    },
+    {
+      "query_id": "syn-09846dd6a11a4efec6c7",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-sauvignon-blanc-belmas-sovinon-blan-beloe-suhoe-13",
+      "predicted": "belmas-winery-sauvignon-blanc-belmas-sovinon-blan-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 41.672
+    },
+    {
+      "query_id": "syn-09882ed0237a656978a3",
+      "scene_type": "single_reference",
+      "expected": "esse-dolinnoe-cabernet-franc-kaberne-fran-krasnoe-suhoe-13",
+      "predicted": "esse-dolinnoe-cabernet-franc-kaberne-fran-krasnoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 77.459
+    },
+    {
+      "query_id": "syn-09a72d3f1a85a54d7c1c",
+      "scene_type": "single_reference",
+      "expected": "zb-vajn-vajt-suhoe-beloe",
+      "predicted": "zb-vajn-vajt-suhoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.994
+    },
+    {
+      "query_id": "syn-09ce858d7fc5def286a5",
+      "scene_type": "single_reference",
+      "expected": "kd-kokur",
+      "predicted": "kd-kokur",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 202.943
+    },
+    {
+      "query_id": "syn-09d96a55795edb9cdbb6",
+      "scene_type": "single_reference",
+      "expected": "vinogradniki-gay-kodzora-muscat-de-gai-kodzor-sladkiy-muskat-aleksandriyskiy-beloe-sladkoe-14",
+      "predicted": "vinogradniki-gay-kodzora-muscat-de-gai-kodzor-sladkiy-muskat-aleksandriyskiy-beloe-sladkoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 155.845
+    },
+    {
+      "query_id": "syn-0b073b335bf115d0b3b7",
+      "scene_type": "single_reference",
+      "expected": "vinogradniki-gay-kodzora-gewurztraminer-de-gai-kodzor-gevyurtstraminer-beloe-polusuhoe-135",
+      "predicted": "vinogradniki-gay-kodzora-gewurztraminer-de-gai-kodzor-gevyurtstraminer-beloe-polusuhoe-135",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 114.527
+    },
+    {
+      "query_id": "syn-0b77cd4a999af1b10bda",
+      "scene_type": "single_reference",
+      "expected": "sary-pandas-vyderzhannoe",
+      "predicted": "sary-pandas-vyderzhannoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 158.148
+    },
+    {
+      "query_id": "syn-0b86b893b7ce829f8320",
+      "scene_type": "single_reference",
+      "expected": "esse-kaberne-otbornoe-kaberne-sovinon-krasnoe-suhoe-12",
+      "predicted": "esse-kaberne-otbornoe-kaberne-sovinon-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 60.04
+    },
+    {
+      "query_id": "syn-0bccf5bb2f95aad5ebd0",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-wiess-risling-beloe-suhoe-12",
+      "predicted": "stn-winery-wiess-risling-beloe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 36.527
+    },
+    {
+      "query_id": "syn-0be0a0d5e357e0096c78",
+      "scene_type": "single_reference",
+      "expected": "vinogradniki-gay-kodzora-viognier-de-ga-kodzor-vione-beloe-suhoe-125",
+      "predicted": "vinogradniki-gay-kodzora-viognier-de-ga-kodzor-vione-beloe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 127.997
+    },
+    {
+      "query_id": "syn-0c064646c6d58fff3c9f",
+      "scene_type": "single_reference",
+      "expected": "vinogradniki-gay-kodzora-sauvignon-blanc-de-ga-kodzor-sovinon-blan-beloe-suhoe-12",
+      "predicted": "vinogradniki-gay-kodzora-sauvignon-blanc-de-ga-kodzor-sovinon-blan-beloe-suhoe-12",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 172.316
+    },
+    {
+      "query_id": "syn-0c58853b2802bc604100",
+      "scene_type": "single_reference",
+      "expected": "esse-blanc-de-noirs-pino-nuar-beloe-ekstra-bryut-115",
+      "predicted": "esse-blanc-de-noirs-pino-nuar-beloe-ekstra-bryut-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 121.207
+    },
+    {
+      "query_id": "syn-0c75b06a9fd3171cfb98",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-viognier-katya-belmas-vione-beloe-suhoe-135",
+      "predicted": "belmas-winery-viognier-katya-belmas-vione-beloe-suhoe-135",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 68.134
+    },
+    {
+      "query_id": "syn-0cbed6605466b49f02f9",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-malbec-katya-belmas-malbek-rozovoe-suhoe-11",
+      "predicted": "belmas-winery-malbec-katya-belmas-malbek-rozovoe-suhoe-11",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 75.171
+    },
+    {
+      "query_id": "syn-0cdfe628df2c8766bcf9",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-malbec-katya-belmas-malbek-rozovoe-suhoe-11",
+      "predicted": "belmas-winery-malbec-katya-belmas-malbek-rozovoe-suhoe-11",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 65.426
+    },
+    {
+      "query_id": "syn-0d13a230fca0cb97c048",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-saignee-sira-rozovoe-suhoe-125",
+      "predicted": "stn-winery-saignee-sira-rozovoe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 128.087
+    },
+    {
+      "query_id": "syn-0d543d4abd3c64563526",
+      "scene_type": "single_reference",
+      "expected": "esse-mama-marselan-krasnoe-suhoe-135",
+      "predicted": "esse-mama-marselan-krasnoe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 87.607
+    },
+    {
+      "query_id": "syn-0d59c157cc8fd8ea48ed",
+      "scene_type": "single_reference",
+      "expected": "golubitskoe-estate-chardonnay",
+      "predicted": "golubitskoe-estate-chardonnay",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 69.06
+    },
+    {
+      "query_id": "syn-0e06739ca0c64456f154",
+      "scene_type": "single_reference",
+      "expected": "balaklava-pino-nuar",
+      "predicted": "balaklava-pino-nuar",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 84.11
+    },
+    {
+      "query_id": "syn-0ed0a62a0fae6ad6595f",
+      "scene_type": "single_reference",
+      "expected": "golubitskoe-rose",
+      "predicted": "golubitskoe-rose",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 73.051
+    },
+    {
+      "query_id": "syn-0f8bc3e43f15f3f4e0f8",
+      "scene_type": "single_reference",
+      "expected": "denisov_pino_noir_klaret",
+      "predicted": "denisov_pino_noir_klaret",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 130.186
+    },
+    {
+      "query_id": "syn-0fb00bb29c3205a6c875",
+      "scene_type": "single_reference",
+      "expected": "denisov-winery-petnat-rkatsiteli-beloe-ekstra-bryut-107",
+      "predicted": "denisov-winery-petnat-rkatsiteli-beloe-ekstra-bryut-107",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 89.015
+    },
+    {
+      "query_id": "syn-1012f5a234d47b5dfc2b",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-viogner-katya-vione-beloe-suhoe-135",
+      "predicted": "belmas-winery-viogner-katya-vione-beloe-suhoe-135",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 68.509
+    },
+    {
+      "query_id": "syn-1029f1fdbc36a855d8fe",
+      "scene_type": "single_reference",
+      "expected": "denisov_pazori_risling",
+      "predicted": "denisov_pazori_risling",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 83.282
+    },
+    {
+      "query_id": "syn-10f6afbb5d611f8d4e30",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-muskat-beloe-suhoe-115",
+      "predicted": "stn-winery-muskat-beloe-suhoe-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 86.683
+    },
+    {
+      "query_id": "syn-1101347ce5955c315ba5",
+      "scene_type": "single_reference",
+      "expected": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+      "predicted": "vinodelnya-konstantina-dzitoeva-kd-shardone-beloe-suhoe-128",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 159.514
+    },
+    {
+      "query_id": "syn-110a7a03a71a70dbdc29",
+      "scene_type": "single_reference",
+      "expected": "esse-pino-gri-blush-rozovoe-suhoe-115",
+      "predicted": "esse-pino-gri-blush-rozovoe-suhoe-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 61.301
+    },
+    {
+      "query_id": "syn-11408a7c508772741cf5",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-merlo-krasnoe-suhoe-14",
+      "predicted": "stn-winery-merlo-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 54.694
+    },
+    {
+      "query_id": "syn-118e6eedff2ede50f491",
+      "scene_type": "single_reference",
+      "expected": "esse-rkatsiteli-beloe-suhoe-125",
+      "predicted": "esse-rkatsiteli-beloe-suhoe-125",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 83.179
+    },
+    {
+      "query_id": "syn-1200e6f206e6a3612357",
+      "scene_type": "single_reference",
+      "expected": "jd_winery_shardone",
+      "predicted": "jd_winery_shardone",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 97.434
+    },
+    {
+      "query_id": "syn-12024a422012875f1366",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-muskat-beloe-suhoe-115",
+      "predicted": "stn-winery-muskat-beloe-suhoe-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 124.011
+    },
+    {
+      "query_id": "syn-12caf3a1e413b5919433",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-traminer-traminer-beloe-suhoe-13",
+      "predicted": "stn-winery-traminer-traminer-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 111.518
+    },
+    {
+      "query_id": "syn-130e10e9a57eec85cb98",
+      "scene_type": "single_reference",
+      "expected": "zolotaya-balka-zb-spumante-brut-risling-beloe-bryut-125",
+      "predicted": "zolotaya-balka-zb-spumante-brut-risling-beloe-bryut-125",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 122.761
+    },
+    {
+      "query_id": "syn-13b1e4a18f0289c2b06e",
+      "scene_type": "single_reference",
+      "expected": "esse-pino-gri-beloe-suhoe-12",
+      "predicted": "esse-pino-gri-beloe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 105.033
+    },
+    {
+      "query_id": "syn-145090f5d94b98e8fe14",
+      "scene_type": "single_reference",
+      "expected": "esse-rose-cuvee-prestige-pino-nuar-rozovoe-bryut-115",
+      "predicted": "esse-rose-cuvee-prestige-pino-nuar-rozovoe-bryut-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 147.205
+    },
+    {
+      "query_id": "syn-1560372ad7687005934d",
+      "scene_type": "single_reference",
+      "expected": "imenie-sikory-shardone-semeynyy-rezerv-beloe-suhoe-13",
+      "predicted": "imenie-sikory-sovinon-blan-semeynyy-rezerv-beloe-suhoe-13",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 75.45
+    },
+    {
+      "query_id": "syn-1568644c0b2ebd214c0f",
+      "scene_type": "single_reference",
+      "expected": "esse-brut-cuvee-prestige-shardone-beloe-ekstra-bryut-115",
+      "predicted": "esse-brut-cuvee-prestige-shardone-beloe-ekstra-bryut-115",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 130.343
+    },
+    {
+      "query_id": "syn-159d636d12f47864ba82",
+      "scene_type": "single_reference",
+      "expected": "esse-rose-cuvee-prestige-pino-nuar-rozovoe-bryut-13",
+      "predicted": "esse-rose-cuvee-prestige-pino-nuar-rozovoe-bryut-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 161.573
+    },
+    {
+      "query_id": "syn-15c1e0cea15353e518d8",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-sauvignon-blanc-katya-sovinon-blan-beloe-suhoe-115",
+      "predicted": "belmas-winery-viogner-katya-vione-beloe-suhoe-135",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 67.786
+    },
+    {
+      "query_id": "syn-15ebc1e3c9e368164cec",
+      "scene_type": "single_reference",
+      "expected": "vinodelnya-konstantina-dzitoeva-kd-bryut-shardone-beloe-115",
+      "predicted": "vinodelnya-konstantina-dzitoeva-kd-bryut-shardone-beloe-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 178.351
+    },
+    {
+      "query_id": "syn-1610bf0db2c453c38e88",
+      "scene_type": "single_reference",
+      "expected": "esse-esse-millesime-brut-zero-dosage-shardone-beloe-ekstra-bryut-115",
+      "predicted": "esse-esse-millesime-brut-zero-dosage-shardone-beloe-ekstra-bryut-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 100.513
+    },
+    {
+      "query_id": "syn-1618b75bbffddbdcc536",
+      "scene_type": "single_reference",
+      "expected": "vinodelnya-pokrovskaya-pokrovskoe-krasnoe-kaberne-sovinon-suhoe-14",
+      "predicted": "vinodelnya-pokrovskaya-pokrovskoe-krasnoe-kaberne-sovinon-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.137
+    },
+    {
+      "query_id": "syn-162447fe56cb175eb12c",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-sauvignon-blanc-katya-belmas-sovinon-blan-beloe-suhoe-115",
+      "predicted": "belmas-winery-sauvignon-blanc-katya-belmas-sovinon-blan-beloe-suhoe-115",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 63.051
+    },
+    {
+      "query_id": "syn-1650ed1236993e6f188a",
+      "scene_type": "single_reference",
+      "expected": "zb-vajn-risling-polusuhoe-beloe",
+      "predicted": "zb-vajn-risling-polusuhoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.699
+    },
+    {
+      "query_id": "syn-168bb92ed29fab5855f6",
+      "scene_type": "single_reference",
+      "expected": "golubitskoe-rose",
+      "predicted": "golubitskoe-rose",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 102.106
+    },
+    {
+      "query_id": "syn-16d9143c2b6fff6b1038",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-risling-beloe-suhoe-135",
+      "predicted": "golubitskoe-estate-pino-nuar-rezerv-krasnoe-suhoe-132",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 43.229
+    },
+    {
+      "query_id": "syn-1718b6b4547ce4fa6a2a",
+      "scene_type": "single_reference",
+      "expected": "zb-vajn-risling-polusuhoe-beloe",
+      "predicted": "zb-vajn-risling-polusuhoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 71.137
+    },
+    {
+      "query_id": "syn-17b3e51a52da8a964588",
+      "scene_type": "single_reference",
+      "expected": "esse-merlo-krasnoe-suhoe-135",
+      "predicted": "esse-merlo-krasnoe-suhoe-135",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 55.942
+    },
+    {
+      "query_id": "syn-17c28777c4eb6bbdec0b",
+      "scene_type": "single_reference",
+      "expected": "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-12",
+      "predicted": "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 123.16
+    },
+    {
+      "query_id": "syn-17c437f832eb2a5ac87f",
+      "scene_type": "single_reference",
+      "expected": "imenie-sikory-risling-semeynyy-rezerv-beloe-suhoe-13",
+      "predicted": "zolotoe-pole-legend-of-crimea-white-blend-malvaziya-beloe-suhoe-135",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 69.102
+    },
+    {
+      "query_id": "syn-182db0f177e9658902ca",
+      "scene_type": "single_reference",
+      "expected": "zolotaya-balka-blanc-de-neige-shardone-beloe-suhoe-125",
+      "predicted": "barhat",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 58.891
+    },
+    {
+      "query_id": "syn-183841c51c36cf09b920",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-trio-aligote-beloe-suhoe-13",
+      "predicted": "stn-winery-trio-aligote-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 60.245
+    },
+    {
+      "query_id": "syn-18399e536692fbe224e1",
+      "scene_type": "single_reference",
+      "expected": "le-k2-kamenolomnya-sira-krasnoe-suhoe-145",
+      "predicted": "le-k2-kamenolomnya-sira-krasnoe-suhoe-145",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 67.033
+    },
+    {
+      "query_id": "syn-185c4cd9154afa829b0d",
+      "scene_type": "single_reference",
+      "expected": "polusladkoe-rozovoe-zolotaya-balka",
+      "predicted": "polusladkoe-rozovoe-zolotaya-balka",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 73.213
+    },
+    {
+      "query_id": "syn-1887322e5089afbc0095",
+      "scene_type": "single_reference",
+      "expected": "zb-wine-moscato-beloe-polusladkoe",
+      "predicted": "zb-wine-moscato-beloe-polusladkoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 148.324
+    },
+    {
+      "query_id": "syn-19821039ba96897ed6d4",
+      "scene_type": "single_reference",
+      "expected": "aromatnoe-shenen-blan-beloe-suhoe-13",
+      "predicted": "aromatnoe-shenen-blan-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 112.018
+    },
+    {
+      "query_id": "syn-19845d4e64f767c04adc",
+      "scene_type": "single_reference",
+      "expected": "zolotaya-balka-zb-spumante-semi-dry-risling-beloe-polusuhoe-125",
+      "predicted": "zolotaya-balka-zb-spumante-semi-dry-risling-beloe-polusuhoe-125",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 110.343
+    },
+    {
+      "query_id": "syn-19a7d13e8541cc5eef17",
+      "scene_type": "single_reference",
+      "expected": "vinodelnya-pokrovskaya-pokrovskoe-sladkoe-krasnoe-kaberne-sovinon-13",
+      "predicted": "vinodelnya-pokrovskaya-pokrovskoe-sladkoe-krasnoe-kaberne-sovinon-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 175.811
+    },
+    {
+      "query_id": "syn-19d52040f2bdb94e464a",
+      "scene_type": "single_reference",
+      "expected": "stn-winery-wiess-risling-beloe-suhoe-12",
+      "predicted": "stn-winery-wiess-risling-beloe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 23.484
+    },
+    {
+      "query_id": "syn-1a0484685e9943e36195",
+      "scene_type": "single_reference",
+      "expected": "belmas-winery-viognier-katya-belmas-vione-beloe-suhoe-135",
+      "predicted": "belmas-winery-sauvignon-blanc-katya-belmas-sovinon-blan-beloe-suhoe-115",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 39.843
+    },
+    {
+      "query_id": "syn-1a4293af128fb3e66b1f",
+      "scene_type": "single_reference",
+      "expected": "esse-rubinovyy-rubinovyy-magaracha-krasnoe-suhoe-12",
+      "predicted": "esse-rubinovyy-rubinovyy-magaracha-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 53.049
+    },
+    {
+      "query_id": "syn-1ad0fa1eb1701c5da162",
+      "scene_type": "single_reference",
+      "expected": "le-k2-vassal-risling-beloe-suhoe-14",
+      "predicted": "le-k2-vassal-risling-beloe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 73.855
+    },
+    {
+      "query_id": "syn-1b5842250306b50356b9",
+      "scene_type": "single_reference",
+      "expected": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-127",
+      "predicted": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-127",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 76.773
+    },
+    {
+      "query_id": "syn-1b593181dcb97551f580",
+      "scene_type": "single_reference",
+      "expected": "portvejn-krymskij",
+      "predicted": "portvejn-krymskij",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 123.8
+    },
+    {
+      "query_id": "syn-1bc7edf4451b9ec14245",
+      "scene_type": "single_reference",
+      "expected": "zb-vajn-moskato-polusladkoe-rozovoe",
+      "predicted": "zb-vajn-moskato-polusladkoe-rozovoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 176.183
+    },
+    {
+      "query_id": "syn-1bdbc5ede8a6079a4878",
+      "scene_type": "single_reference",
+      "expected": "esse-kaberne-otbornoe-kaberne-sovinon-krasnoe-suhoe-12",
+      "predicted": "esse-kaberne-otbornoe-kaberne-sovinon-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 46.628
+    },
+    {
+      "query_id": "syn-1c515d7591b17b81719f",
+      "scene_type": "single_reference",
+      "expected": "aromatnoe-malbek-rezerv-krasnoe-suhoe-125",
+      "predicted": "aromatnoe-malbek-rezerv-krasnoe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 66.309
+    },
+    {
+      "query_id": "syn-0109ef35af88946f2cb1",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-mama-marselan-krasnoe-suhoe-115",
+      "predicted": "esse-mama-marselan-krasnoe-suhoe-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 76.359
+    },
+    {
+      "query_id": "syn-011d81680e3351caf1a7",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-petnat-saperavi-severnyy-rozovoe-ekstra-bryut-105",
+      "predicted": "denisov-winery-petnat-saperavi-severnyy-rozovoe-ekstra-bryut-105",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 110.169
+    },
+    {
+      "query_id": "syn-011fe240f47cc2a9fbb4",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-nectar-muscat-muskat-belyy-beloe-polusuhoe-12",
+      "predicted": "esse-nectar-muscat-muskat-belyy-beloe-polusuhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 114.339
+    },
+    {
+      "query_id": "syn-01667f2666005c5ddc7d",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-sangiovese-sandzhoveze-krasnoe-suhoe-135",
+      "predicted": "esse-sangiovese-sandzhoveze-krasnoe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 117.125
+    },
+    {
+      "query_id": "syn-0180b12f029112bc7314",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-petnat-risling-beloe-ekstra-bryut-10",
+      "predicted": "denisov-winery-petnat-risling-beloe-ekstra-bryut-10",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 93.785
+    },
+    {
+      "query_id": "syn-0191abf63751b80b2b81",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-risling-pozdniy-sbor-beloe-sladkoe-13",
+      "predicted": "imenie-sikory-risling-pozdniy-sbor-beloe-sladkoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 85.747
+    },
+    {
+      "query_id": "syn-01e9e60731cf7cb162f0",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-prirodno-polusladkoe-krasnoe-merlo-13",
+      "predicted": "esse-prirodno-polusladkoe-krasnoe-merlo-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 85.324
+    },
+    {
+      "query_id": "syn-02233dab2944ef1398a7",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-sauvignon-blanc-katya-sovinon-blan-beloe-suhoe-115",
+      "predicted": "agora-rosa-viva-riesling",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 89.974
+    },
+    {
+      "query_id": "syn-0228c8319b9821ba0ef3",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-spumante-polusuhoe-beloe",
+      "predicted": "zb-vajn-spumante-polusuhoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 83.449
+    },
+    {
+      "query_id": "syn-0259171e020e56bf6922",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-sauvignon-blanc-belmas-sovinon-blan-beloe-suhoe-13",
+      "predicted": "belmas-winery-sauvignon-blanc-belmas-sovinon-blan-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 69.978
+    },
+    {
+      "query_id": "syn-029f0f6963787bc4c258",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-prirodno-polusladkoe-beloe-risling-125",
+      "predicted": "esse-prirodno-polusladkoe-beloe-risling-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 86.597
+    },
+    {
+      "query_id": "syn-0319ba7983002919bb2e",
+      "scene_type": "center_target_three_bottles",
+      "expected": "privat",
+      "predicted": "privat",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 103.864
+    },
+    {
+      "query_id": "syn-03665776206268b6e51a",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-kaberne-otbornoe-kaberne-sovinon-krasnoe-suhoe-12",
+      "predicted": "esse-kaberne-otbornoe-kaberne-sovinon-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 96.979
+    },
+    {
+      "query_id": "syn-044c9017bcc1807ec6e1",
+      "scene_type": "center_target_three_bottles",
+      "expected": "shardone-balaklava",
+      "predicted": "shardone-balaklava",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 112.302
+    },
+    {
+      "query_id": "syn-04d3e2f202080ff840f9",
+      "scene_type": "center_target_three_bottles",
+      "expected": "balaklava-muskat",
+      "predicted": "balaklava-muskat",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.183
+    },
+    {
+      "query_id": "syn-050ed4286a56212b960e",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-pino-nuar-shardone-ekstra-bryut-beloe-125",
+      "predicted": "denisov-winery-pino-nuar-shardone-ekstra-bryut-beloe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 101.668
+    },
+    {
+      "query_id": "syn-0511b02acf17399ac231",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-petnat-rkatsiteli-beloe-ekstra-bryut-107",
+      "predicted": "denisov-winery-petnat-rkatsiteli-beloe-ekstra-bryut-107",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.664
+    },
+    {
+      "query_id": "syn-0574a953e34851563470",
+      "scene_type": "center_target_three_bottles",
+      "expected": "semeynaya-vinodelnya-mihaila-kolesnikova-ispanets-kaberne-sovinon-krasnoe-suhoe-148",
+      "predicted": "semeynaya-vinodelnya-mihaila-kolesnikova-ispanets-kaberne-sovinon-krasnoe-suhoe-148",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 100.904
+    },
+    {
+      "query_id": "syn-057954a1d4f80f5dbe8c",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-risling-semeynyy-rezerv-beloe-suhoe-13",
+      "predicted": "imenie-sikory-risling-semeynyy-rezerv-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 89.35
+    },
+    {
+      "query_id": "syn-062978afef4589a1af45",
+      "scene_type": "center_target_three_bottles",
+      "expected": "sary-pandas-vyderzhannoe",
+      "predicted": "sary-pandas-vyderzhannoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 128.408
+    },
+    {
+      "query_id": "syn-0717f5114c2cd18d9887",
+      "scene_type": "center_target_three_bottles",
+      "expected": "stn-winery-bratstvo-kochergi-pino-nuar-krasnoe-suhoe-12",
+      "predicted": "stn-winery-bratstvo-kochergi-pino-nuar-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 107.764
+    },
+    {
+      "query_id": "syn-0888bce9b4899c460087",
+      "scene_type": "center_target_three_bottles",
+      "expected": "shardone-balaklava",
+      "predicted": "shardone-balaklava",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 116.76
+    },
+    {
+      "query_id": "syn-08acb64fe08cb46aae53",
+      "scene_type": "center_target_three_bottles",
+      "expected": "le-k2-kamenolomnya-sira-krasnoe-suhoe-145",
+      "predicted": "le-k2-kamenolomnya-sira-krasnoe-suhoe-145",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 93.689
+    },
+    {
+      "query_id": "syn-0b60254a7bd9515fa3d7",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinogradniki-gay-kodzora-semillion-de-gai-kodzor-semilon-beloe-sladkoe-12",
+      "predicted": "vinogradniki-gay-kodzora-semillion-de-gai-kodzor-semilon-beloe-sladkoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 129.653
+    },
+    {
+      "query_id": "syn-0c2d4f342aa4ece29fc5",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinogradniki-gay-kodzora-terroir-de-gai-kodzor-sira-krasnoe-suhoe-14",
+      "predicted": "vinogradniki-gay-kodzora-terroir-de-gai-kodzor-sira-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 110.245
+    },
+    {
+      "query_id": "syn-0e12c1d08b2dca5844c3",
+      "scene_type": "center_target_three_bottles",
+      "expected": "beloe-suhoe",
+      "predicted": "beloe-suhoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 109.332
+    },
+    {
+      "query_id": "syn-0e5644c63398866685c6",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-wine-moscato-beloe-polusladkoe",
+      "predicted": "zb-wine-moscato-beloe-polusladkoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 144.417
+    },
+    {
+      "query_id": "syn-0e9e8dd959d5890ca7fb",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-12",
+      "predicted": "esse-brut-zero-dosage-shardone-beloe-ekstra-bryut-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 126.059
+    },
+    {
+      "query_id": "syn-0f8ed42992445314c7b2",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-moskato-polusladkoe-rozovoe",
+      "predicted": "zb-vajn-moskato-polusladkoe-rozovoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 77.896
+    },
+    {
+      "query_id": "syn-108316ac30c6b480b82f",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-saperavi-krasnoe-suhoe-13",
+      "predicted": "esse-saperavi-krasnoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 77.675
+    },
+    {
+      "query_id": "syn-132be34b1f5557078ba7",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-semeynoe-nasledie-kaberne-sovinon-krasnoe-suhoe-14",
+      "predicted": "imenie-sikory-semeynoe-nasledie-kaberne-sovinon-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 92.422
+    },
+    {
+      "query_id": "syn-134cc31890471d98f656",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-rkatsiteli-oranzh-beloe-suhoe-12",
+      "predicted": "esse-rkatsiteli-oranzh-beloe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 144.885
+    },
+    {
+      "query_id": "syn-13557d4e03962f48f73c",
+      "scene_type": "center_target_three_bottles",
+      "expected": "stn-winery-arhitektor-sira-krasnoe-suhoe-12",
+      "predicted": "stn-winery-arhitektor-sira-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 103.706
+    },
+    {
+      "query_id": "syn-135705276e3c46e521af",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-riesling-belmas-risling-beloe-suhoe-135",
+      "predicted": "belmas-winery-riesling-belmas-risling-beloe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 78.157
+    },
+    {
+      "query_id": "syn-138287aaa22715fa3d5d",
+      "scene_type": "center_target_three_bottles",
+      "expected": "znoj-denisov-vajneri",
+      "predicted": "znoj-denisov-vajneri",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 109.002
+    },
+    {
+      "query_id": "syn-13f72e14a72ee6fbca14",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinodelnya-pokrovskaya-marinka-marinovskiy-rozovoe-suhoe-123",
+      "predicted": "vinodelnya-pokrovskaya-marinka-marinovskiy-rozovoe-suhoe-123",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 115.915
+    },
+    {
+      "query_id": "syn-14688cac27d21968e9ba",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov_barynya_kurmyshi",
+      "predicted": "denisov_barynya_kurmyshi",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 104.831
+    },
+    {
+      "query_id": "syn-1503f96a904a795696ac",
+      "scene_type": "center_target_three_bottles",
+      "expected": "jd_winery_shardone",
+      "predicted": "zhemchuzhnaya-9-muskat-rozovyj-kaberne-sovinon",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 105.141
+    },
+    {
+      "query_id": "syn-155e5afadc92c5d08089",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-zb-spumante-semi-dry-risling-beloe-polusuhoe-125",
+      "predicted": "zolotaya-balka-zb-spumante-brut-risling-beloe-bryut-125",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 125.418
+    },
+    {
+      "query_id": "syn-15741a4a2567c287fcd3",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinodelnya-pokrovskaya-sovinon-blan-pokrovskoe-beloe-suhoe-12",
+      "predicted": "vinodelnya-pokrovskaya-sovinon-blan-pokrovskoe-beloe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 127.965
+    },
+    {
+      "query_id": "syn-15f074783b036dc9e7c4",
+      "scene_type": "center_target_three_bottles",
+      "expected": "kd-kokur",
+      "predicted": "kd-kokur",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 130.008
+    },
+    {
+      "query_id": "syn-15ff5ad8c35fe6352b69",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-zb-spumante-semi-dry-risling-beloe-polusuhoe-125",
+      "predicted": "zolotaya-balka-zb-spumante-brut-risling-beloe-bryut-125",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 123.444
+    },
+    {
+      "query_id": "syn-16e8a7239d914f8f40da",
+      "scene_type": "center_target_three_bottles",
+      "expected": "le-k2-temnaya-roza-sira-rozovoe-suhoe-13",
+      "predicted": "le-k2-temnaya-roza-sira-rozovoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.042
+    },
+    {
+      "query_id": "syn-181d234cb2bc8524365f",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-vione-beloe-suhoe-13",
+      "predicted": "esse-vione-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 76.844
+    },
+    {
+      "query_id": "syn-195283b52e5e6be7d8ae",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-gerts-kaberne-sovinon-krasnoe-suhoe-14",
+      "predicted": "imenie-sikory-gerts-kaberne-sovinon-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 92.584
+    },
+    {
+      "query_id": "syn-199b27d6b896118c3230",
+      "scene_type": "center_target_three_bottles",
+      "expected": "balaklava-muskat-beloe-polusladkoe",
+      "predicted": "balaklava-muskat-beloe-polusladkoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 94.523
+    },
+    {
+      "query_id": "syn-19c45ec53d0fda9edae9",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-risling-polusuhoe-beloe",
+      "predicted": "zb-vajn-risling-polusuhoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 80.553
+    },
+    {
+      "query_id": "syn-19c8a3303a30557e42da",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-kaberne-sovinon-semeynyy-rezerv-krasnoe-suhoe-14",
+      "predicted": "imenie-sikory-kaberne-sovinon-semeynyy-rezerv-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 77.267
+    },
+    {
+      "query_id": "syn-1aafeb012eae90025a21",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-sovinon-blan-semeynyy-rezerv-beloe-suhoe-13",
+      "predicted": "imenie-sikory-sovinon-blan-semeynyy-rezerv-beloe-suhoe-13",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 100.825
+    },
+    {
+      "query_id": "syn-1bd39070395a20bf02dc",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov_rubin_klaret_krasnaya_strelka",
+      "predicted": "denisov_rubin_klaret_krasnaya_strelka",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.45
+    },
+    {
+      "query_id": "syn-1be6904914ac933efe1f",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-malbec-katya-belmas-malbek-rozovoe-suhoe-11",
+      "predicted": "belmas-winery-malbec-katya-belmas-malbek-rozovoe-suhoe-11",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 108.131
+    },
+    {
+      "query_id": "syn-1c87867b396dbabf756d",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinogradniki-gay-kodzora-malbec-red-klen-de-gai-kodzor-malbek-krasnoe-suhoe-135",
+      "predicted": "vinogradniki-gay-kodzora-malbec-red-klen-de-gai-kodzor-malbek-krasnoe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 117.354
+    },
+    {
+      "query_id": "syn-1cb7f34a8d1f350be15a",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-dolinnoe-cabernet-franc-kaberne-fran-krasnoe-suhoe-13",
+      "predicted": "esse-dolinnoe-cabernet-franc-kaberne-fran-krasnoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 95.185
+    },
+    {
+      "query_id": "syn-1dcc2b41bb6a8ee3d4d0",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-petnat-tsitron-risling-tsitronnyy-magaracha-beloe-ekstra-bryut-102",
+      "predicted": "denisov-winery-petnat-tsitron-risling-tsitronnyy-magaracha-beloe-ekstra-bryut-102",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 103.066
+    },
+    {
+      "query_id": "syn-1df472d43d393fa677a5",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-semeynoe-nasledie-kaberne-sovinon-krasnoe-suhoe-14",
+      "predicted": "imenie-sikory-semeynoe-nasledie-kaberne-sovinon-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 97.02
+    },
+    {
+      "query_id": "syn-1e8d127fa64c853ed7ca",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinodelnya-konstantina-dzitoeva-kion-kaberne-sovinon-krasnoe-suhoe-145",
+      "predicted": "vinodelnya-konstantina-dzitoeva-kion-kaberne-sovinon-krasnoe-suhoe-145",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 74.053
+    },
+    {
+      "query_id": "syn-1f0c2b4c976b564e4c4b",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinodelnya-pokrovskaya-rozovoe-marinovskiy-suhoe-135",
+      "predicted": "vinodelnya-pokrovskaya-rozovoe-marinovskiy-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 98.922
+    },
+    {
+      "query_id": "syn-2034203f8954a857712c",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-zb-frizzante-dry-risling-beloe-suhoe-10",
+      "predicted": "zolotaya-balka-zb-frizzante-dry-risling-beloe-suhoe-10",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 122.741
+    },
+    {
+      "query_id": "syn-204d69a24ccc3af1db77",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-spumante-bryut-rozovoe",
+      "predicted": "zb-vajn-spumante-bryut-rozovoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 85.515
+    },
+    {
+      "query_id": "syn-209e66bd4042300b502f",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-muskat-belyy-beloe-suhoe-135",
+      "predicted": "esse-muskat-belyy-beloe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 94.188
+    },
+    {
+      "query_id": "syn-218ae610a34949c8f557",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinodelnya-konstantina-dzitoeva-kd-bryut-shardone-beloe-115",
+      "predicted": "vinodelnya-konstantina-dzitoeva-kd-bryut-shardone-beloe-115",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 131.267
+    },
+    {
+      "query_id": "syn-22ad399dd2023a2fc0b4",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-pino-gri-beloe-suhoe-135",
+      "predicted": "esse-pino-gri-beloe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 114.814
+    },
+    {
+      "query_id": "syn-24d413b86d7c5e6a4643",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-gevyurtstraminer-beloe-suhoe-12",
+      "predicted": "esse-gevyurtstraminer-beloe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 83.391
+    },
+    {
+      "query_id": "syn-25360a4d948085ea65fa",
+      "scene_type": "center_target_three_bottles",
+      "expected": "stn-winery-pino-nuar-krasnoe-suhoe-12",
+      "predicted": "stn-winery-pino-nuar-krasnoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 90.523
+    },
+    {
+      "query_id": "syn-25987cef160eb8333e37",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinogradniki-gay-kodzora-muscat-de-gai-kodzor-sladkiy-muskat-aleksandriyskiy-beloe-sladkoe-14",
+      "predicted": "vinogradniki-gay-kodzora-muscat-de-gai-kodzor-sladkiy-muskat-aleksandriyskiy-beloe-sladkoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 120.515
+    },
+    {
+      "query_id": "syn-2598a67d8f00cd9c0cc0",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-rkatsiteli-syur-li-beloe-suhoe-125",
+      "predicted": "esse-rkatsiteli-syur-li-beloe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 87.171
+    },
+    {
+      "query_id": "syn-25ab58b435cd4b1e822b",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-sovinon-blan-sikory-beloe-suhoe-13",
+      "predicted": "imenie-sikory-sovinon-blan-sikory-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 91.98
+    },
+    {
+      "query_id": "syn-2613d69c02742d2740df",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-vajt-suhoe-beloe",
+      "predicted": "zb-vajn-vajt-suhoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 91.081
+    },
+    {
+      "query_id": "syn-26221e71e50b3b8c0ec5",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-riesling-katya-belmas-risling-beloe-suhoe-125",
+      "predicted": "belmas-winery-riesling-katya-belmas-risling-beloe-suhoe-125",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 85.097
+    },
+    {
+      "query_id": "syn-285dd19e6c769d1cd44b",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-zb-frizzante-dry-risling-beloe-suhoe-10",
+      "predicted": "zolotaya-balka-zb-frizzante-dry-risling-beloe-suhoe-10",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 136.616
+    },
+    {
+      "query_id": "syn-28b13f76fc8b7104dab5",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-shardone-semeynyy-rezerv-beloe-suhoe-13",
+      "predicted": "imenie-sikory-sovinon-blan-semeynyy-rezerv-beloe-suhoe-13",
+      "correct": false,
+      "method": "visual",
+      "latency_ms": 114.554
+    },
+    {
+      "query_id": "syn-29e6ae4ee3be8bb37fc9",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-zb-spumante-brut-risling-beloe-bryut-125",
+      "predicted": "zolotaya-balka-zb-spumante-brut-risling-beloe-bryut-125",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 130.597
+    },
+    {
+      "query_id": "syn-29ea4127a950cf69f989",
+      "scene_type": "center_target_three_bottles",
+      "expected": "bryut-beloe-zolotaya-balka",
+      "predicted": "bryut-beloe-zolotaya-balka",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 92.019
+    },
+    {
+      "query_id": "syn-2ab60b33b80ca26c2390",
+      "scene_type": "center_target_three_bottles",
+      "expected": "stn-winery-trio-aligote-beloe-suhoe-13",
+      "predicted": "stn-winery-trio-aligote-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 73.241
+    },
+    {
+      "query_id": "syn-2ae4edd887ad4c76b441",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-kaberne-fran-sikory-rozovoe-suhoe-13",
+      "predicted": "imenie-sikory-kaberne-fran-sikory-rozovoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 99.49
+    },
+    {
+      "query_id": "syn-2c0585869dcb40f2a86f",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-kaberne-fran-roze-rozovoe-suhoe-13",
+      "predicted": "imenie-sikory-kaberne-fran-roze-rozovoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 103.105
+    },
+    {
+      "query_id": "syn-2c4737d3fd8bda31e8e0",
+      "scene_type": "center_target_three_bottles",
+      "expected": "gaj-kodzor-rusan",
+      "predicted": "gaj-kodzor-rusan",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 117.065
+    },
+    {
+      "query_id": "syn-2c608cfcc603c698fb80",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-zb-wine-riesling-risling-beloe-polusuhoe-115",
+      "predicted": "zolotaya-balka-zb-wine-riesling-risling-beloe-polusuhoe-115",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 156.338
+    },
+    {
+      "query_id": "syn-2cff98b2c7207151c883",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-cabernet-sauvignon-rose-belmas-kaberne-sovinon-rozovoe-suhoe-13",
+      "predicted": "belmas-winery-cabernet-sauvignon-rose-belmas-kaberne-sovinon-rozovoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 91.282
+    },
+    {
+      "query_id": "syn-2d3b20b28cc320cb1b94",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-malbec-katya-malbek-rozovoe-suhoe-129",
+      "predicted": "belmas-winery-malbec-katya-malbek-rozovoe-suhoe-129",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 99.758
+    },
+    {
+      "query_id": "syn-2d961c35c1fb78ff9a69",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-krasnostop-zolotovskiy-na-terrasah-rozovoe-suhoe-13",
+      "predicted": "imenie-sikory-krasnostop-zolotovskiy-na-terrasah-rozovoe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 124.18
+    },
+    {
+      "query_id": "syn-2ef5aec5cc2e81f2bc27",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinodelnya-pokrovskaya-rkatsiteli-shardone-pokrovskoe-beloe-suhoe-13",
+      "predicted": "vinodelnya-pokrovskaya-rkatsiteli-shardone-pokrovskoe-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 100.326
+    },
+    {
+      "query_id": "syn-30de84e2f5e557468863",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-chernyy-prints-shardone-beloe-ekstra-bryut-12",
+      "predicted": "zolotaya-balka-chernyy-prints-shardone-beloe-ekstra-bryut-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 87.844
+    },
+    {
+      "query_id": "syn-30df79d8687e5285ac1f",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-krasnostop-zolotovskiy-na-terrasah-krasnoe-suhoe-14",
+      "predicted": "imenie-sikory-krasnostop-zolotovskiy-na-terrasah-krasnoe-suhoe-14",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 90.889
+    },
+    {
+      "query_id": "syn-3122542336fcb9ae2d8c",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-petnat-rkatsiteli-beloe-ekstra-bryut-107",
+      "predicted": "denisov-winery-petnat-rkatsiteli-beloe-ekstra-bryut-107",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 106.936
+    },
+    {
+      "query_id": "syn-316f73e8bd9e82b8a6d8",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-viogner-katya-vione-beloe-suhoe-135",
+      "predicted": "belmas-winery-viogner-katya-vione-beloe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 67.471
+    },
+    {
+      "query_id": "syn-31a813f623cb5c27995c",
+      "scene_type": "center_target_three_bottles",
+      "expected": "vinogradniki-gay-kodzora-sauvignon-blanc-de-ga-kodzor-sovinon-blan-beloe-suhoe-12",
+      "predicted": "vinogradniki-gay-kodzora-sauvignon-blanc-de-ga-kodzor-sovinon-blan-beloe-suhoe-12",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 117.84
+    },
+    {
+      "query_id": "syn-31b3a82c31826a965ab6",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-spumante-bryut-beloe",
+      "predicted": "zb-vajn-spumante-bryut-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 74.042
+    },
+    {
+      "query_id": "syn-32f3efc3c94d022de37e",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-spumante-bryut-beloe",
+      "predicted": "zb-vajn-spumante-bryut-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 84.194
+    },
+    {
+      "query_id": "syn-32fc2ab9d3415a89a174",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-roze-kaberne-sovinon-rozovoe-suhoe-135",
+      "predicted": "esse-roze-kaberne-sovinon-rozovoe-suhoe-135",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 95.656
+    },
+    {
+      "query_id": "syn-3345f8c7c16f07b4afaf",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zolotaya-balka-zb-frizzante-semi-dry-rose-risling-rozovoe-polusuhoe-10",
+      "predicted": "zolotaya-balka-zb-frizzante-semi-dry-rose-risling-rozovoe-polusuhoe-10",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 116.414
+    },
+    {
+      "query_id": "syn-3497c333059790bfc95a",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-moskato-polusladkoe-beloe",
+      "predicted": "zb-vajn-moskato-polusladkoe-beloe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 83.25
+    },
+    {
+      "query_id": "syn-34a0d4fd6066df86bd65",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-sauvignon-blanc-katya-belmas-sovinon-blan-beloe-suhoe-115",
+      "predicted": "belmas-winery-sauvignon-blanc-katya-belmas-sovinon-blan-beloe-suhoe-115",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 87.403
+    },
+    {
+      "query_id": "syn-34a691cd65d246f3b052",
+      "scene_type": "center_target_three_bottles",
+      "expected": "belmas-winery-sauvignon-blanc-belmas-sovinon-blan-beloe-suhoe-13",
+      "predicted": "belmas-winery-sauvignon-blanc-belmas-sovinon-blan-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 74.357
+    },
+    {
+      "query_id": "syn-35140b0ab9891bffd2af",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+      "predicted": "denisov-winery-assamblyazh-rubin-golodrigi-rozovoe-suhoe-12",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 115.606
+    },
+    {
+      "query_id": "syn-359ccbb5ed7a075eb2ea",
+      "scene_type": "center_target_three_bottles",
+      "expected": "imenie-sikory-shardone-sikory-beloe-suhoe-13",
+      "predicted": "imenie-sikory-shardone-sikory-beloe-suhoe-13",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 92.444
+    },
+    {
+      "query_id": "syn-35d1daac8fbd6c885b77",
+      "scene_type": "center_target_three_bottles",
+      "expected": "zb-vajn-moskato-polusladkoe-rozovoe",
+      "predicted": "zb-vajn-moskato-polusladkoe-rozovoe",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 75.47
+    },
+    {
+      "query_id": "syn-36d567ec623e4921ce2e",
+      "scene_type": "center_target_three_bottles",
+      "expected": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-127",
+      "predicted": "le-k2-v-tumane-sovinon-blan-beloe-suhoe-127",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 88.169
+    },
+    {
+      "query_id": "syn-37e6e1aee0053f576e51",
+      "scene_type": "center_target_three_bottles",
+      "expected": "esse-esse-shardone-beloe-suhoe-125",
+      "predicted": "esse-esse-shardone-beloe-suhoe-125",
+      "correct": true,
+      "method": "visual",
+      "latency_ms": 84.054
+    },
+    {
+      "query_id": "syn-391836907e7a4bd087ba",
+      "scene_type": "center_target_three_bottles",
+      "expected": "denisov-winery-petnat-tsitron-risling-tsitronnyy-magaracha-beloe-ekstra-bryut-102",
+      "predicted": "denisov-winery-petnat-tsitron-risling-tsitronnyy-magaracha-beloe-ekstra-bryut-102",
+      "correct": true,
+      "method": "local_features",
+      "latency_ms": 104.756
+    }
+  ]
+}

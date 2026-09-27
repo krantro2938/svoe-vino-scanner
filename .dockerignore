@@ -1,0 +1,16 @@
+.git
+**/.venv
+**/__pycache__
+**/.pytest_cache
+**/node_modules
+**/.vinext
+**/dist
+Датасет
+*.rar
+*.zip
+data/catalog-images
+data/external
+evaluation/artifacts
+training/artifacts
+data/generated/expanded/dinov2
+data/generated/*.json

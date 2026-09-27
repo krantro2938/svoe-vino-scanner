@@ -1,0 +1,42 @@
+# Organiser package and brief (provided to every team; kept locally, not redistributed)
+Датасет.zip
+Датасет/
+*.pdf
+
+# Local planning and hand-off notes
+HACKATHON_FULL_MARKS_PLAN.md
+PROJECT_STATUS.md
+
+# Extracted media (the compact generated index is committed for reproducible builds)
+data/catalog-images/
+data/eval/
+evaluation/artifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# JavaScript
+node_modules/
+.vinext/
+dist/
+.wrangler/
+*.tsbuildinfo
+
+# Local configuration
+.env
+.env.local
+*.log
+.DS_Store
+__MACOSX/
+._*
+
+# Downloaded website snapshot, expanded catalogue and training images
+# Reproduce with scripts/scrape_wine_catalog.py and scripts/merge_wine_catalog.py.
+data/external/
+data/generated/expanded/
+
+# Real phone photos for the private test set (see PROJECT_STATUS.md §8)
+data/real-photos/

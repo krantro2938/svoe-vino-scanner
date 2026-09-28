@@ -125,8 +125,9 @@ class LocalFeatures:
         self.slots_of = {}
         for i, slug in enumerate(self.slugs):
             self.slots_of.setdefault(slug, []).append(i)
-        self.flann = cv2.FlannBasedMatcher(dict(algorithm=1, trees=4), dict(checks=PARAMETERS['flann_checks']))
-        self.flann.add([self.desc]); self.flann.train()
+        # The catalogue-wide FLANN index (~1 GB) only serves the legacy predict()
+        # fallback; the fusion pipeline calls verify() on a shortlist instead.
+        self._flann = None
         self.bf = cv2.BFMatcher(cv2.NORM_L2)
 
     def _inliers(self, points, desc, index):
@@ -170,7 +171,10 @@ class LocalFeatures:
         points, desc = self.features(image, query=True)
         if len(desc) < 2:
             return {'slug': None, 'candidates': [], 'query_features': len(desc)}
-        pairs = self.flann.knnMatch(desc, k=2)
+        if self._flann is None:
+            self._flann = cv2.FlannBasedMatcher(dict(algorithm=1, trees=4), dict(checks=PARAMETERS['flann_checks']))
+            self._flann.add([self.desc]); self._flann.train()
+        pairs = self._flann.knnMatch(desc, k=2)
         votes = Counter()
         for pair in pairs:
             if len(pair) < 2: continue

@@ -1,0 +1,13 @@
+vino.aansl.com {
+    encode zstd gzip
+    request_body {
+        max_size 20MB
+    }
+    @api path /v1/* /health/* /docs /docs/* /openapi.json
+    handle @api {
+        reverse_proxy vino-api:8080
+    }
+    handle {
+        reverse_proxy vino-web:3003
+    }
+}

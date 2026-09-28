@@ -1,0 +1,31 @@
+# Public demo behind an existing Caddy on a shared host.
+#   docker compose -f deploy/docker-compose.server.yml up -d --build
+# Caddy (on the external "caddy-net" network) routes /v1/* and /health/* to
+# vino-api and everything else to vino-web; see deploy/Caddyfile.snippet.
+name: vino
+
+services:
+  vino-api:
+    build:
+      context: ..
+      dockerfile: services/inference/Dockerfile
+    container_name: vino-api
+    restart: unless-stopped
+    mem_limit: 2500m
+    networks: [caddy-net]
+
+  vino-web:
+    build:
+      context: ..
+      dockerfile: apps/web/Dockerfile
+      args:
+        NEXT_PUBLIC_API_BASE_URL: https://vino.aansl.com
+    container_name: vino-web
+    restart: unless-stopped
+    mem_limit: 384m
+    depends_on: [vino-api]
+    networks: [caddy-net]
+
+networks:
+  caddy-net:
+    external: true

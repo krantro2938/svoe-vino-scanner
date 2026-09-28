@@ -37,7 +37,7 @@ def main() -> int:
             started = time.perf_counter()
             words = reader.read(image)
             handle.write(json.dumps({"query_id": row["query_id"], "ms": round((time.perf_counter() - started) * 1000),
-                                     "words": [[w.text, w.score, w.weight] for w in words]}, ensure_ascii=False) + "\n")
+                                     "words": [[w.text, w.score, w.weight, w.cx, w.height] for w in words]}, ensure_ascii=False) + "\n")
             handle.flush()
             if (i + 1) % 50 == 0:
                 print(f"{i + 1}/{len(rows)}", flush=True)

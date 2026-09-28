@@ -41,6 +41,14 @@ def test_label_text_normalisation_handles_real_ocr_failure_modes():
     assert matcher._resolve("катаронрислинг") == [("катарон", 0.8), ("рислинг", 0.8)]
 
 
+def test_greek_lookalikes_and_weighted_style_vote():
+    assert "алушта" in normalize_tokens("ΑЛΥШТА")          # Greek Α and Υ from the recogniser
+    assert style_of("CYXOE KPACHOE") == {"sweetness": "dry", "colour": "red"}
+    from app.label_text import query_style
+    words = [Word("blanc", 0.9, 0.25), Word("sélection rouge", 0.9, 0.9)]   # neighbour at the edge
+    assert query_style(words)["colour"] == "red"
+
+
 def test_style_parser_prefers_specific_sweetness_phrases():
     assert style_of("Игристое экстра брют")["sweetness"] == "extra_brut"
     assert style_of("вино полусухое розовое") == {"sweetness": "semi_dry", "colour": "rose"}

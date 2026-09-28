@@ -21,34 +21,43 @@
     "t_missing"
   ],
   "weights": {
-    "v_max": 0.78661,
-    "v_mean": -0.308435,
-    "v_full_bottle": 0.41275,
-    "v_centre_label": 0.41736,
-    "v_gap": -0.23923,
-    "v_rank": 1.603537,
-    "sift_inliers": -0.047674,
-    "sift_matches": 0.101785,
-    "sift_best": 1.395991,
-    "t_score": 0.731499,
-    "t_gap": 0.75734,
-    "t_coverage": 6.453547,
-    "t_style_conflict": -2.918942,
-    "t_style_match": 1.169254,
-    "t_year_conflict": -2.074713,
-    "t_year_match": -1.066511,
-    "t_present": -1.894598,
-    "t_missing": -3.065093
+    "v_max": 0.679353,
+    "v_mean": -0.32315,
+    "v_full_bottle": 0.496511,
+    "v_centre_label": 0.425736,
+    "v_gap": -0.250485,
+    "v_rank": 1.602853,
+    "sift_inliers": -0.057616,
+    "sift_matches": 0.105622,
+    "sift_best": 1.413726,
+    "t_score": 0.689818,
+    "t_gap": 0.712926,
+    "t_coverage": 6.332604,
+    "t_style_conflict": -2.6663,
+    "t_style_match": 1.019109,
+    "t_year_conflict": -2.049505,
+    "t_year_match": -1.071794,
+    "t_present": -1.723616,
+    "t_missing": -3.347642
   },
   "trained_on": [
     "evaluation/artifacts/field-v2/fusion_features.jsonl"
   ],
   "queries": 1500,
   "holdout_fraction": 0.0,
-  "not_found_threshold": 0.4534,
+  "not_found_threshold": 0.4523,
   "augmentation": {
     "reference_mismatch_fraction": 0.2,
-    "why": "real shelf labels often differ from the small catalogue photo; see training/fit_fusion.py"
+    "why": "real shelf labels often differ from the small catalogue photo; 0.2 was best on the 17 real in-catalogue photos (0.3-0.5 were worse)"
   },
-  "adapter": "data/generated/expanded/siglip/adapter.npy (l2_to_identity=20)"
+  "adapter": "adapter.npy (l2_to_identity=20)",
+  "open_set": {
+    "bias": -6.37416,
+    "p1": 2.88055,
+    "sift_inliers": 0.71105,
+    "v_max": 7.30703,
+    "t_coverage": 0.48955
+  },
+  "open_set_threshold": 0.2,
+  "open_set_note": "logistic on top-candidate evidence; negatives are real photos of wines not in the catalogue; LOO-validated (training/fit_open_set.py)"
 }

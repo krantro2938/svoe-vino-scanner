@@ -44,6 +44,7 @@ class Recognition:
     candidates: tuple[Candidate, ...]
     ocr_text: str
     timings_ms: dict[str, float]
+    in_catalogue: float | None = None
 
     @property
     def best(self) -> Candidate:
@@ -55,20 +56,39 @@ class Recognition:
         return self.best.probability - second
 
 
+OPEN_SET_FEATURES = ("p1", "sift_inliers", "v_max", "t_coverage")
+
+
 class FusionModel:
     def __init__(self, weights: dict[str, float], bias_note: str = "",
-                 not_found_threshold: float | None = None) -> None:
+                 not_found_threshold: float | None = None,
+                 open_set: dict[str, float] | None = None, open_set_threshold: float = 0.5) -> None:
         self.weights = weights
         self.note = bias_note
         # Calibrated by training/fit_fusion.py with simulated unknown wines.
         self.not_found_threshold = not_found_threshold
+        # Logistic "is this wine in the catalogue at all?" model over the top
+        # candidate's absolute evidence (training/fit_open_set.py). Softmax
+        # probabilities are relative and stay high for an unknown wine that
+        # merely beats weak competitors; absolute evidence does not.
+        self.open_set = open_set
+        self.open_set_threshold = open_set_threshold
+
+    def in_catalogue(self, p1: float, features: dict[str, float]) -> float | None:
+        if not self.open_set:
+            return None
+        values = {"p1": p1, **features}
+        z = self.open_set.get("bias", 0.0) + sum(self.open_set.get(k, 0.0) * values.get(k, 0.0)
+                                                  for k in OPEN_SET_FEATURES)
+        return 1.0 / (1.0 + math.exp(-z))
 
     @classmethod
     def load(cls, path: Path | None) -> "FusionModel":
         if path is not None and path.is_file():
             raw = json.loads(path.read_text())
             return cls({k: float(v) for k, v in raw["weights"].items()}, str(raw.get("trained_on", "")),
-                       raw.get("not_found_threshold"))
+                       raw.get("not_found_threshold"), raw.get("open_set"),
+                       float(raw.get("open_set_threshold", 0.5)))
         # Hand-set prior used only until a fitted model is available.
         return cls({"v_mean": 25.0, "v_gap": 10.0, "sift_inliers": 1.5, "sift_best": 2.0,
                     "t_score": 0.8, "t_gap": 0.8, "t_style_conflict": -2.0, "t_year_conflict": -2.0,
@@ -189,4 +209,5 @@ class Recognizer:
         order = np.argsort(-probabilities)
         candidates = tuple(Candidate(slugs[i], float(probabilities[i]), rows[i]) for i in order)
         timings["total"] = (time.perf_counter() - started) * 1000
-        return Recognition(candidates, " ".join(w.text for w in words or []), timings)
+        in_catalogue = self.fusion.in_catalogue(candidates[0].probability, candidates[0].features)
+        return Recognition(candidates, " ".join(w.text for w in words or []), timings, in_catalogue)

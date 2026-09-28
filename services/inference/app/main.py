@@ -150,11 +150,15 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             if match.quality_hint and match.confidence < resolved_settings.found_threshold:
                 return "low_quality"
             return "found" if match.confidence >= resolved_settings.found_threshold else "uncertain"
+        # A wine the catalogue does not contain can still win the softmax; the
+        # absolute-evidence model decides that first.
+        if match.in_catalogue is not None and match.in_catalogue < recognizer.open_set_threshold:
+            return "not_found"
         if match.confidence >= resolved_settings.found_probability:
             return "found"
         if match.quality_hint:
             return "low_quality"
-        if match.confidence < recognizer.not_found_probability:
+        if match.in_catalogue is None and match.confidence < recognizer.not_found_probability:
             return "not_found"
         return "uncertain"
 
@@ -180,6 +184,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             wine=card(recognizer, match.wine),
             confidence=match.confidence,
             confidence_top5=round(min(1.0, sum(p for _, p in match.candidates)), 4),
+            in_catalogue=match.in_catalogue,
             top1_top2_margin=match.margin,
             top5=top5,
             analogs=analogs,

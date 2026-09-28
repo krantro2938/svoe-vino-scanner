@@ -45,6 +45,8 @@ class SearchResponse(BaseModel):
     # the top-5 list; the margin is p(top1) - p(top2).
     confidence: float = Field(ge=0.0, le=1.0)
     confidence_top5: float = Field(default=0.0, ge=0.0, le=1.0)
+    # Probability that the photographed wine is in the catalogue at all.
+    in_catalogue: float | None = Field(default=None, ge=0.0, le=1.0)
     top1_top2_margin: float = Field(ge=0.0, le=1.0)
     top5: list[RankedWine] = Field(default_factory=list)
     analogs: list[AnalogWine] = Field(default_factory=list)

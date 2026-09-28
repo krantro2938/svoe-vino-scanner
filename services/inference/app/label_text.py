@@ -38,6 +38,14 @@ LATIN_HOMOGLYPHS = str.maketrans({
     "p": "р", "t": "т", "x": "х", "y": "у", "3": "з",
 })
 HOMOGLYPH_ONLY = set("abcehkmoptxy3")
+# The recogniser also emits Greek capitals for Cyrillic ones ("ΑЛΥШТА", "ΔЕΡБЕНТ").
+# Greek never appears on Russian wine labels, so map every look-alike.
+GREEK_HOMOGLYPHS = str.maketrans({
+    "Α": "А", "Β": "В", "Γ": "Г", "Δ": "Д", "Ε": "Е", "Ζ": "З", "Η": "Н", "Κ": "К", "Λ": "Л",
+    "Μ": "М", "Ο": "О", "Π": "П", "Ρ": "Р", "Τ": "Т", "Υ": "У", "Φ": "Ф", "Χ": "Х",
+    "α": "а", "γ": "г", "δ": "д", "ε": "е", "κ": "к", "λ": "л", "μ": "м", "ο": "о",
+    "π": "п", "ρ": "р", "τ": "т", "υ": "у", "φ": "ф", "χ": "х",
+})
 CYRILLIC = re.compile(r"[а-яё]")
 # Labels print grape and style names in Latin script while the catalogue uses
 # Russian (or the reverse). Each group maps to one canonical Cyrillic token.
@@ -69,13 +77,13 @@ STYLE_GROUPS = {
         "brut": ("брют", "brut", "bryut"),
         "semi_dry": ("полусухое", "polusuhoe", "semi dry", "demi sec"),
         "semi_sweet": ("полусладкое", "polusladkoe", "semi sweet"),
-        "dry": ("сухое", "suhoe", "dry"),
-        "sweet": ("сладкое", "sladkoe", "sweet", "десертное", "desertnoe"),
+        "dry": ("сухое", "suhoe", "dry", "secco", "trocken"),
+        "sweet": ("сладкое", "sladkoe", "sweet", "десертное", "desertnoe", "dolce"),
     },
     "colour": {
-        "red": ("красное", "krasnoe", "red", "rosso"),
-        "white": ("белое", "beloe", "white", "bianco", "byanko", "blanc"),
-        "rose": ("розовое", "rozovoe", "rose", "rosé", "roze"),
+        "red": ("красное", "krasnoe", "red", "rosso", "rouge", "tinto", "rot"),
+        "white": ("белое", "beloe", "white", "bianco", "byanko", "blanc", "blanco", "weiss"),
+        "rose": ("розовое", "rozovoe", "rose", "rosé", "roze", "rosato", "rosado"),
         "orange": ("оранж", "oranzh", "orange"),
     },
 }
@@ -94,7 +102,7 @@ def _roman_value(token: str) -> int | None:
 
 def normalize_tokens(text: str) -> list[str]:
     """Split, fold and expand text into comparable tokens (both scripts)."""
-    text = CAMEL_BOUNDARY.sub(" ", unicodedata.normalize("NFKC", text))
+    text = CAMEL_BOUNDARY.sub(" ", unicodedata.normalize("NFKC", text).translate(GREEK_HOMOGLYPHS))
     tokens: list[str] = []
     for raw in TOKEN_PATTERN.findall(text.casefold().replace("ё", "е")):
         variants = {raw}
@@ -115,8 +123,16 @@ def normalize_tokens(text: str) -> list[str]:
     return [t for t in tokens if t not in STOP_TOKENS and len(t) >= (2 if t.isdigit() else 3)]
 
 
+def _script_fix(raw: str) -> str:
+    """Cyrillic word written with Latin look-alikes ("CYXOE") -> Cyrillic."""
+    if (set(raw) <= HOMOGLYPH_ONLY and len(raw) >= 3) or CYRILLIC.search(raw):
+        return raw.translate(LATIN_HOMOGLYPHS)
+    return raw
+
+
 def style_of(text: str) -> dict[str, str]:
-    folded = " " + " ".join(TOKEN_PATTERN.findall(unicodedata.normalize("NFKC", text).casefold())) + " "
+    text = unicodedata.normalize("NFKC", text).translate(GREEK_HOMOGLYPHS).casefold().replace("ё", "е")
+    folded = " " + " ".join(_script_fix(t) for t in TOKEN_PATTERN.findall(text)) + " "
     found: dict[str, str] = {}
     for group, styles in STYLE_GROUPS.items():
         for style, phrases in styles.items():   # ordered: specific phrases first
@@ -126,11 +142,25 @@ def style_of(text: str) -> dict[str, str]:
     return found
 
 
+def query_style(words: list["Word"]) -> dict[str, str]:
+    """Style words vote with their word weight, so a central "rouge" beats a
+    neighbouring bottle's "blanc" at the frame edge."""
+    votes: dict[str, dict[str, float]] = {}
+    for word in words:
+        for group, style in style_of(word.text).items():
+            votes.setdefault(group, {}).setdefault(style, 0.0)
+            votes[group][style] += word.weight
+    return {group: max(styles, key=styles.get) for group, styles in votes.items()
+            if max(styles.values()) >= 0.2}
+
+
 @dataclass(frozen=True, slots=True)
 class Word:
     text: str
     score: float
     weight: float   # detector confidence x centrality x size prior
+    cx: float = 0.5  # horizontal centre, 0..1 of the frame
+    height: float = 0.0  # box height, fraction of the frame
 
 
 @dataclass(frozen=True, slots=True)
@@ -176,11 +206,12 @@ class LabelReader:
             box = np.asarray(box, dtype=np.float32)
             cx, cy = box[:, 0].mean() / width, box[:, 1].mean() / height
             h = (box[:, 1].max() - box[:, 1].min()) / height
-            # Neighbouring bottles sit at the frame edges: halve text weight at
-            # the border. Larger glyphs (brand, wine name) carry more identity.
-            centrality = math.exp(-((cx - 0.5) / 0.28) ** 2)
+            # Neighbouring bottles sit at the frame edges (real shelf photos show
+            # 2-3 bottles): text at the border keeps ~20% of its weight. Larger glyphs (brand, wine name) carry more identity.
+            centrality = math.exp(-((cx - 0.5) / 0.2) ** 2)
             size = min(1.0, 0.4 + h * 12)
-            words.append(Word(text, float(score), float(score * (0.35 + 0.65 * centrality) * size)))
+            words.append(Word(text, float(score), float(score * (0.2 + 0.8 * centrality) * size),
+                              float(cx), float(h)))
         return words
 
 
@@ -233,9 +264,8 @@ class TextMatcher:
         # Each OCR token contributes once per slug, via its best-matching variant
         # (Cyrillic, transliterated, homoglyph-corrected or fuzzy).
         groups: dict[str, dict[str, float]] = {}
-        full_text = " ".join(w.text for w in words if w.weight > 0.25)
         for word in words:
-            for raw in TOKEN_PATTERN.findall(CAMEL_BOUNDARY.sub(" ", word.text)):
+            for raw in TOKEN_PATTERN.findall(CAMEL_BOUNDARY.sub(" ", word.text.translate(GREEK_HOMOGLYPHS))):
                 group = groups.setdefault(raw.casefold(), {})
                 for token in normalize_tokens(raw):
                     parts = self._resolve(token)
@@ -243,7 +273,7 @@ class TextMatcher:
                         # Halves of a split compound are separate words.
                         target = group if len(parts) == 1 else groups.setdefault(f"{raw.casefold()}#{part}", {})
                         target[key] = max(target.get(key, 0.0), word.weight * factor)
-        query_style = style_of(full_text)
+        label_style = query_style(words)
         query_years = {t for g in groups.values() for t in g if YEAR_PATTERN.match(t)}
         totals: dict[str, float] = {}
         matched: dict[str, list[str]] = {}
@@ -262,8 +292,8 @@ class TextMatcher:
         evidence = {}
         for slug, total in totals.items():
             style = self.styles[slug]
-            conflict = any(g in style and style[g] != v for g, v in query_style.items())
-            agree = any(style.get(g) == v for g, v in query_style.items())
+            conflict = any(g in style and style[g] != v for g, v in label_style.items())
+            agree = any(style.get(g) == v for g, v in label_style.items())
             years = self.years[slug]
             evidence[slug] = TextEvidence(
                 score=total,

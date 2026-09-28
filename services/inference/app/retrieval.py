@@ -31,6 +31,7 @@ class Match:
     # Ranked (slug, probability) pairs from the fusion ranker, best first.
     candidates: tuple[tuple[str, float], ...] = ()
     timings_ms: dict[str, float] | None = None
+    in_catalogue: float | None = None
 
 
 def _ocr_confidence(match: OCRMatch, visually_indexed: bool) -> float:
@@ -201,6 +202,7 @@ class RecognitionEngine:
                 "fusion",
                 tuple((c.slug, round(c.probability, 4)) for c in recognition.candidates[:5]),
                 {k: round(v, 1) for k, v in recognition.timings_ms.items()},
+                None if recognition.in_catalogue is None else round(recognition.in_catalogue, 4),
             )
             self._remember(digest, result)
             return result
@@ -301,6 +303,11 @@ class RecognitionEngine:
         if fusion is not None and fusion.not_found_threshold is not None:
             return float(fusion.not_found_threshold)
         return self.settings.not_found_probability
+
+    @property
+    def open_set_threshold(self) -> float:
+        fusion = self._recognizer.fusion if self._recognizer is not None else None
+        return fusion.open_set_threshold if fusion is not None else 0.5
 
     def image_path(self, slug: str) -> Path | None:
         wine = self.catalog.get(slug)

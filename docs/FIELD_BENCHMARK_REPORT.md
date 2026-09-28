@@ -15,9 +15,9 @@
 | Metric | Value |
 | --- | ---: |
 | Labeled queries | 700 |
-| Accuracy@1 | 0.931 |
-| Micro-F1 | 0.931 |
-| Macro-F1 | 0.887 |
+| Accuracy@1 | 0.933 |
+| Micro-F1 | 0.933 |
+| Macro-F1 | 0.890 |
 | Recall@5 | 0.996 |
 | Top-5 candidate coverage | 700 |
 
@@ -25,7 +25,7 @@
 
 | Requests | p50 (ms) | p95 (ms) | max (ms) |
 | ---: | ---: | ---: | ---: |
-| 700 | 1128.0 | 1327.0 | 1542.0 |
+| 700 | 1217.0 | 2323.8 | 2900.0 |
 
 ## Validation findings
 

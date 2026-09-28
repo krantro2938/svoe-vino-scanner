@@ -43,6 +43,26 @@ catalogue photo (new vintage, redesign), and without this the ranker becomes
 confidently wrong in exactly that case. Both labelled real bottles available (the
 public Massandra photo and a second Massandra bottle visible in it) favoured it.
 
+## Real supermarket photos
+
+Put phone photos in `data/real-photos/` (git-ignored) with `labels.tsv`
+(`file<TAB>expected_slug|alt_slug<TAB>note`, `NOT_IN_CATALOG` for wines the catalogue
+lacks) and build `evaluation/artifacts/real-v1/queries.jsonl` from it. Then:
+
+```bash
+$P evaluation/cache_ocr.py --queries evaluation/artifacts/real-v1/queries.jsonl --output evaluation/artifacts/real-v1/ocr_words.jsonl
+$P evaluation/dump_fusion_features.py --queries evaluation/artifacts/real-v1/queries.jsonl \
+  --ocr-words evaluation/artifacts/real-v1/ocr_words.jsonl --output evaluation/artifacts/real-v1/fusion_features.jsonl
+$P evaluation/score_real.py --features evaluation/artifacts/real-v1/fusion_features.jsonl \
+  --queries evaluation/artifacts/real-v1/queries.jsonl --verbose
+# "is this wine in the catalogue?" model, leave-one-out on the real photos
+$P training/fit_open_set.py --real-features evaluation/artifacts/real-v1/fusion_features.jsonl \
+  --real-queries evaluation/artifacts/real-v1/queries.jsonl \
+  --synthetic-features evaluation/artifacts/field-v1/fusion_features.jsonl --threshold 0.2 --write
+```
+
+Results: [docs/REAL_PHOTO_TEST.md](../docs/REAL_PHOTO_TEST.md).
+
 The earlier studio-framed synthetic set (below) remains for regression history;
 its numbers are much easier than real photos and are not the headline.
 

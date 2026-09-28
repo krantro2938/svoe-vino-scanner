@@ -5,6 +5,9 @@
 цифровой сомелье и аналоги из других виноделен. Если вина в каталоге нет, сервис честно
 говорит об этом и показывает похожие вина, а не выдаёт чужую карточку за найденную.
 
+**Демо:** https://vino.aansl.com (сервер 2 vCPU / 4 ГБ, ответ ~3 с; на ноутбуке команды ~1,5 с).
+API того же сервера: `https://vino.aansl.com/v1/eval/predict`, документация — `/docs`.
+
 ## Результаты
 
 ### Реальные фото из супермаркета
@@ -109,6 +112,12 @@ scripts/build_artifacts.sh          # каталог → медиа → снап
 `scripts/scrape_wine_catalog.py --output data/external/vino-svoe-<дата>` (каталог растёт
 ~50 вин в день). Веса ранкера лежат в репозитории (`services/inference/data/fusion.json`),
 модели OCR — в `services/inference/data/ocr/`.
+
+### Публичный сервер
+
+`deploy/docker-compose.server.yml` поднимает API и UI за уже работающим Caddy (сеть
+`caddy-net`, без открытых портов), `deploy/Caddyfile.snippet` — маршрутизация
+`/v1`, `/health` → API, остальное → UI. Артефакты — `scripts/download_artifacts.sh`.
 
 ### Скрипт организатора
 

@@ -99,7 +99,27 @@ function apiBaseCandidates() {
   ].filter((value): value is string => Boolean(value))));
 }
 
-async function searchWine(file: File): Promise<SearchResponse> {
+// Phone photos are 3-5 MB; recognition never uses more than ~1300 px, so send a
+// 2560 px JPEG (~0.8 MB) instead; 2048 px flipped one borderline real photo. EXIF orientation is applied by createImageBitmap.
+async function downscaleForUpload(file: File, maxSide = 2560): Promise<File> {
+  try {
+    const bitmap = await createImageBitmap(file, { imageOrientation: 'from-image' });
+    const scale = Math.min(1, maxSide / Math.max(bitmap.width, bitmap.height));
+    if (scale === 1 && file.size < 1_500_000) return file;
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.round(bitmap.width * scale);
+    canvas.height = Math.round(bitmap.height * scale);
+    canvas.getContext('2d')?.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+    bitmap.close();
+    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/jpeg', 0.92));
+    return blob ? new File([blob], 'label.jpg', { type: 'image/jpeg' }) : file;
+  } catch {
+    return file;
+  }
+}
+
+async function searchWine(original: File): Promise<SearchResponse> {
+  const file = await downscaleForUpload(original);
   let connectionFailure = false;
 
   for (const baseUrl of apiBaseCandidates()) {

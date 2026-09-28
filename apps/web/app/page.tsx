@@ -434,7 +434,7 @@ export default function Home() {
 
       {phase === 'scan' && (
         <>
-          <section className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 pb-16 pt-4 sm:px-8 lg:grid-cols-[1.06fr_0.94fr] lg:items-center lg:pb-24 lg:pt-14">
+          <section className="relative mx-auto grid w-full max-w-6xl grid-cols-1 gap-10 px-5 pb-16 pt-4 sm:px-8 lg:grid-cols-[1.06fr_0.94fr] lg:items-center lg:pb-24 lg:pt-14">
             <div className="pointer-events-none absolute -left-52 top-20 size-[32rem] rounded-full bg-[radial-gradient(circle,var(--wine-glow),transparent_68%)]" />
             <div className="relative z-10 max-w-xl">
               <Badge className="mb-5 bg-accent text-accent-foreground">
@@ -463,7 +463,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-16 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:py-24">
+          <section className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-5 py-16 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:py-24">
             <div className="relative mx-auto grid h-[410px] w-full max-w-sm place-items-center overflow-hidden rounded-[2rem] bg-[#f9f1f1]">
               <div className="absolute inset-x-10 top-8 h-40 rounded-full bg-white/50 blur-3xl" />
               <img src={SAMPLE_IMAGE} alt="Бутылка вина Мускатель белый Массандра" className="relative h-[360px] w-auto object-contain drop-shadow-[0_24px_28px_rgb(44_42_40/22%)]" />
@@ -681,7 +681,7 @@ function WineResult({ wine, previewUrl, meta, saved, onSave, onReset, dish, setD
   const others = candidates.filter((item) => item.wine.slug !== wine.slug);
   return (
     <div className="mx-auto w-full max-w-6xl px-5 pb-16 pt-3 sm:px-8 sm:pt-8">
-      <section className="grid overflow-hidden rounded-[2rem] bg-card shadow-[0_24px_80px_rgb(114_49_53/10%)] ring-1 ring-primary/10 lg:grid-cols-[0.88fr_1.12fr]">
+      <section className="grid grid-cols-1 overflow-hidden rounded-[2rem] bg-card shadow-[0_24px_80px_rgb(114_49_53/10%)] ring-1 ring-primary/10 lg:grid-cols-[0.88fr_1.12fr]">
         <div className="relative grid min-h-[430px] place-items-center overflow-hidden bg-[#f9f1f1] p-8 sm:min-h-[560px]">
           <div className="absolute inset-x-16 top-10 h-56 rounded-full bg-white/60 blur-3xl" />
           <img src={image} alt={`${wine.name}, ${wine.winery}`} className={`relative max-h-[490px] max-w-full object-contain ${wine.image_url ? 'drop-shadow-[0_28px_32px_rgb(44_42_40/22%)]' : 'rounded-2xl'}`} />
@@ -742,7 +742,7 @@ function WineResult({ wine, previewUrl, meta, saved, onSave, onReset, dish, setD
       )}
 
       <section id="sommelier" className="mt-10 scroll-mt-6 overflow-hidden rounded-[2rem] bg-[linear-gradient(145deg,#5e2529,#8f3d42)] p-6 text-white sm:p-10 lg:p-12">
-        <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:gap-14">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:gap-14">
           <div>
             <Badge className="bg-white/10 text-white ring-1 ring-white/15"><Sparkles /> Цифровой сомелье</Badge>
             <h2 className="mt-5 font-heading text-3xl leading-tight sm:text-4xl">Подойдёт ли это вино?</h2>
@@ -765,7 +765,7 @@ function WineResult({ wine, previewUrl, meta, saved, onSave, onReset, dish, setD
               <div className="rounded-2xl bg-white p-5 text-foreground shadow-xl">
                 <div className={`flex items-center gap-2 ${pairing.verdict === 'not_ideal' ? 'text-amber-800' : 'text-emerald-800'}`}><BadgeCheck className="size-5" /><span className="text-xs font-bold uppercase tracking-[0.12em]">{pairing.title || 'Рекомендация готова'}</span></div>
                 <p className="mt-3 text-sm leading-6">{pairing.explanation}</p>
-                <div className="mt-4 grid gap-2 text-xs sm:grid-cols-2">
+                <div className="mt-4 grid grid-cols-1 gap-2 text-xs sm:grid-cols-2">
                   {pairing.serving_temperature && <p className="flex items-center gap-2 rounded-xl bg-muted px-3 py-2.5"><ThermometerSun className="size-4 shrink-0 text-primary" /> Подавать при {pairing.serving_temperature}</p>}
                   {pairing.glass && <p className="flex items-center gap-2 rounded-xl bg-muted px-3 py-2.5"><Wine className="size-4 shrink-0 text-primary" /> Бокал: {pairing.glass}</p>}
                 </div>
@@ -773,9 +773,9 @@ function WineResult({ wine, previewUrl, meta, saved, onSave, onReset, dish, setD
                 {pairing.alternatives && pairing.alternatives.length > 0 && (
                   <div className="mt-4 border-t border-border pt-4">
                     <p className="text-xs font-bold uppercase tracking-[0.12em] text-primary">Сомелье предлагает</p>
-                    <div className="mt-3 grid gap-2">
+                    <div className="mt-3 grid grid-cols-1 gap-2">
                       {pairing.alternatives.map((item) => (
-                        <button key={item.slug} onClick={() => onOpenSlug(item.slug)} className="flex items-center gap-3 rounded-xl bg-muted/60 px-3 py-3 text-left transition hover:bg-muted">
+                        <button key={item.slug} onClick={() => onOpenSlug(item.slug)} className="flex min-w-0 items-center gap-3 rounded-xl bg-muted/60 px-3 py-3 text-left transition hover:bg-muted">
                           <span className="min-w-0 flex-1"><strong className="block truncate text-sm">{item.name}</strong><span className="block truncate text-xs text-muted-foreground">{item.winery} · {item.reason}</span></span>
                           <ChevronRight className="size-4 shrink-0 text-muted-foreground" />
                         </button>

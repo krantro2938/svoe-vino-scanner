@@ -177,7 +177,7 @@ class TextEvidence:
 class LabelReader:
     """PP-OCRv5 mobile detector + East-Slavic recogniser (Cyrillic and Latin)."""
 
-    def __init__(self, model_dir: Path, max_side: int = 1280) -> None:
+    def __init__(self, model_dir: Path, max_side: int = 1280, threads: int = 4) -> None:
         from rapidocr import RapidOCR
 
         det = model_dir / "ch_PP-OCRv5_det_mobile.onnx"
@@ -191,7 +191,7 @@ class LabelReader:
             "Global.use_cls": False,
             "Det.model_path": str(det),
             "Rec.model_path": str(rec),
-            "EngineConfig.onnxruntime.intra_op_num_threads": 4,
+            "EngineConfig.onnxruntime.intra_op_num_threads": threads,
         })
 
     def read(self, image: Image.Image) -> list[Word]:

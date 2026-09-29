@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -161,17 +162,41 @@ def shortlist(visual: dict[str, np.ndarray], slugs: list[str], text: dict[str, T
     return chosen
 
 
+def available_cpus() -> int:
+    """CPUs this process may use: affinity mask, then a cgroup v2 quota (docker --cpus)."""
+    override = os.getenv("CIFR_CPUS")
+    if override:
+        return max(1, int(override))
+    count = len(os.sched_getaffinity(0)) if hasattr(os, "sched_getaffinity") else (os.cpu_count() or 1)
+    try:
+        quota, period = Path("/sys/fs/cgroup/cpu.max").read_text().split()
+        if quota != "max":
+            count = min(count, max(1, math.ceil(int(quota) / int(period))))
+    except (OSError, ValueError):
+        pass
+    return max(1, count)
+
+
+def thread_split(cpus: int) -> tuple[int, int]:
+    """(encoder, OCR) threads; 12 CPUs keep the tuned 6 + 4."""
+    encoder = max(1, min(6, cpus // 2))
+    return encoder, max(1, min(4, cpus - encoder))
+
+
 class Recognizer:
     def __init__(self, catalog: dict, visual_dir: Path, ocr_dir: Path | None,
                  local_features=None, fusion_path: Path | None = None) -> None:
         from .encoder import VisualIndex
 
-        self.visual = VisualIndex(visual_dir, catalog)
+        # The encoder and OCR run side by side, so they split the CPUs the
+        # container may use; more threads than cores made a 2-CPU box 2x slower.
+        encoder_threads, ocr_threads = thread_split(available_cpus())
+        self.visual = VisualIndex(visual_dir, catalog, encoder_threads)
         self.text = TextMatcher({s: catalog[s] for s in self.visual.slugs})
         self.reader = None
         if ocr_dir is not None:
             from .label_text import LabelReader
-            self.reader = LabelReader(ocr_dir)
+            self.reader = LabelReader(ocr_dir, threads=ocr_threads)
         self.local = local_features
         self.fusion = FusionModel.load(fusion_path)
         self.pool = ThreadPoolExecutor(max_workers=2)

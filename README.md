@@ -69,7 +69,7 @@ Fusion обучается на field-v2 (1 500 фото), оценка — на 
 docker compose up --build
 ```
 
-UI — `http://localhost:3003`, API — `http://localhost:8081`. С телефона в той же сети
+UI — `http://localhost:3003`, API — `http://localhost:8080` (порт, который по умолчанию ждёт `participant_test.sh`). С телефона в той же сети
 откройте `http://<IP-компьютера>:3003` (CORS разрешает локальные сети).
 
 ### Локально

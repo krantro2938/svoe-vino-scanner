@@ -12,7 +12,7 @@ from typing import Any
 
 import numpy as np
 
-from .catalog import load_catalog
+from .catalog import SCENE_PHOTO_SLUGS, load_catalog
 from .config import Settings
 from .features import DESCRIPTOR_VERSION, extract_descriptors, image_quality
 from .imaging import DecodedImage, center_wine_view
@@ -312,7 +312,7 @@ class RecognitionEngine:
     def image_path(self, slug: str) -> Path | None:
         wine = self.catalog.get(slug)
         directory = self.settings.images_dir
-        if wine is None or not wine.photo_name or directory is None:
+        if wine is None or not wine.photo_name or directory is None or slug in SCENE_PHOTO_SLUGS:
             return None
         path = (directory / wine.photo_name).resolve()
         if path.parent != directory.resolve() or not path.is_file():

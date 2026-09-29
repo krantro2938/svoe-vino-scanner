@@ -94,8 +94,7 @@ async function apiGet<T>(path: string): Promise<T> {
 
 function apiBaseCandidates() {
   const hostname = typeof window === 'undefined' ? '127.0.0.1' : window.location.hostname;
-  const pagePort = typeof window === 'undefined' ? '' : window.location.port;
-  const inferredPorts = pagePort === '3003' ? ['8081', '8080'] : ['8080', '8081'];
+  const inferredPorts = ['8080', '8081'];
   return Array.from(new Set([
     CONFIGURED_API_BASE_URL,
     ...inferredPorts.map((port) => `http://${hostname}:${port}`),
@@ -679,16 +678,19 @@ function WineResult({ wine, previewUrl, meta, saved, onSave, onReset, dish, setD
   taste: string;
   setTaste: (value: string) => void;
 }) {
-  const image = wine.image_url || previewUrl || SAMPLE_IMAGE;
   const isUncertain = meta.status === 'uncertain';
   const isManual = meta.status === 'manual';
+  // Without a catalogue photo the scan itself stands in, but only when the card is its result.
+  const image = wine.image_url || (isManual ? null : previewUrl);
   const others = candidates.filter((item) => item.wine.slug !== wine.slug);
   return (
     <div className="mx-auto w-full max-w-6xl px-5 pb-16 pt-3 sm:px-8 sm:pt-8">
       <section className="grid grid-cols-1 overflow-hidden rounded-[2rem] bg-card shadow-[0_24px_80px_rgb(114_49_53/10%)] ring-1 ring-primary/10 lg:grid-cols-[0.88fr_1.12fr]">
         <div className="relative grid min-h-[430px] place-items-center overflow-hidden bg-[#f9f1f1] p-8 sm:min-h-[560px]">
           <div className="absolute inset-x-16 top-10 h-56 rounded-full bg-white/60 blur-3xl" />
-          <img src={image} alt={`${wine.name}, ${wine.winery}`} className={`relative max-h-[490px] max-w-full object-contain ${wine.image_url ? 'drop-shadow-[0_28px_32px_rgb(44_42_40/22%)]' : 'rounded-2xl'}`} />
+          {image
+            ? <img src={image} alt={`${wine.name}, ${wine.winery}`} className={`relative max-h-[490px] max-w-full object-contain ${wine.image_url ? 'drop-shadow-[0_28px_32px_rgb(44_42_40/22%)]' : 'rounded-2xl'}`} />
+            : <Wine className="relative size-24 text-primary/40" aria-label="Фото бутылки нет в каталоге" />}
           {isManual ? (
             <Badge className="absolute left-5 top-5 bg-card text-foreground/70 shadow-sm"><Wine /> Из каталога</Badge>
           ) : (

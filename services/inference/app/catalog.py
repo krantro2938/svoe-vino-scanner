@@ -20,6 +20,12 @@ CSV_FIELDS = {
     "Название фото": "photo_name",
 }
 
+# The organiser's photo for these wines is an AI-generated table scene, not the
+# bottle ("Generated Image June 22, 2026 - 10_44PM.webp"). Such a scene looks
+# more like a random photo than any bottle shot, so it attracted non-wine
+# queries; these wines are matched by label text only and shown without it.
+SCENE_PHOTO_SLUGS = frozenset({"ona-skazala-da", "rozovoe-polusladkoe-2"})
+
 
 def _clean(value: Any) -> Any:
     return value.strip() if isinstance(value, str) else value

@@ -8,6 +8,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
+from .catalog import SCENE_PHOTO_SLUGS
 from .views import GALLERY_VIEWS, QUERY_VIEWS, query_views
 
 
@@ -78,6 +79,7 @@ class VisualIndex:
             self.adapter = np.load(adapter_path).astype(np.float32)
             self.views = {name: self._project(v) for name, v in self.views.items()}
         self.index_of = {slug: i for i, slug in enumerate(self.slugs)}
+        self.unreliable = np.array([self.index_of[s] for s in SCENE_PHOTO_SLUGS if s in self.index_of], dtype=int)
 
     def _project(self, vectors: np.ndarray) -> np.ndarray:
         if self.adapter is None:
@@ -97,4 +99,6 @@ class VisualIndex:
         stacked = np.stack(list(pairs.values()))
         pairs["max"] = stacked.max(axis=0)
         pairs["mean"] = stacked.mean(axis=0)
+        for scores in pairs.values():   # no usable reference photo: never a visual match
+            scores[self.unreliable] = scores.min()
         return pairs

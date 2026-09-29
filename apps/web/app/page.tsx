@@ -65,7 +65,10 @@ type SearchResponse = {
   alternatives?: WineRecord[];
 };
 
-type SearchMeta = Pick<SearchResponse, 'confidence' | 'confidence_top5' | 'top1_top2_margin' | 'latency_ms' | 'status'>;
+// 'manual': the user opened a card from a list, so the scan's numbers do not describe it.
+type SearchMeta = Pick<SearchResponse, 'confidence' | 'confidence_top5' | 'top1_top2_margin' | 'latency_ms'> & {
+  status?: SearchResponse['status'] | 'manual';
+};
 
 let activeApiBase: string | null = null;
 
@@ -346,9 +349,9 @@ export default function Home() {
     }
   }
 
-  function openWine(next: WineRecord, status: SearchMeta['status'] = 'found') {
+  function openWine(next: WineRecord) {
     setWine(next);
-    setSearchMeta((meta) => ({ ...meta, status }));
+    setSearchMeta({ status: 'manual' });
     setPairing(null);
     setDish('');
     setSaved(false);
@@ -358,7 +361,7 @@ export default function Home() {
 
   async function openSlug(slug: string) {
     try {
-      openWine(withApiImages(await apiGet<WineRecord>(`/v1/wines/${encodeURIComponent(slug)}`)), 'found');
+      openWine(withApiImages(await apiGet<WineRecord>(`/v1/wines/${encodeURIComponent(slug)}`)));
       setCandidates([]);
     } catch {
       /* the list stays visible; nothing else to do */
@@ -493,7 +496,7 @@ export default function Home() {
           previewUrl={previewUrl}
           candidates={candidates}
           analogs={analogs}
-          onOpen={(item) => openWine(item, 'uncertain')}
+          onOpen={(item) => openWine(item)}
           onRetry={reset}
         />
       )}
@@ -522,7 +525,7 @@ export default function Home() {
           pairingLoading={pairingLoading}
           onPairing={() => void getPairing()}
           candidates={candidates}
-          onOpenWine={(item) => openWine(item, 'found')}
+          onOpenWine={(item) => openWine(item)}
           onOpenSlug={(slug) => void openSlug(slug)}
           occasion={occasion}
           setOccasion={setOccasion}
@@ -678,6 +681,7 @@ function WineResult({ wine, previewUrl, meta, saved, onSave, onReset, dish, setD
 }) {
   const image = wine.image_url || previewUrl || SAMPLE_IMAGE;
   const isUncertain = meta.status === 'uncertain';
+  const isManual = meta.status === 'manual';
   const others = candidates.filter((item) => item.wine.slug !== wine.slug);
   return (
     <div className="mx-auto w-full max-w-6xl px-5 pb-16 pt-3 sm:px-8 sm:pt-8">
@@ -685,10 +689,14 @@ function WineResult({ wine, previewUrl, meta, saved, onSave, onReset, dish, setD
         <div className="relative grid min-h-[430px] place-items-center overflow-hidden bg-[#f9f1f1] p-8 sm:min-h-[560px]">
           <div className="absolute inset-x-16 top-10 h-56 rounded-full bg-white/60 blur-3xl" />
           <img src={image} alt={`${wine.name}, ${wine.winery}`} className={`relative max-h-[490px] max-w-full object-contain ${wine.image_url ? 'drop-shadow-[0_28px_32px_rgb(44_42_40/22%)]' : 'rounded-2xl'}`} />
-          <Badge className={`absolute left-5 top-5 bg-card shadow-sm ${isUncertain ? 'text-amber-800' : 'text-emerald-800'}`}>
-            {isUncertain ? <ShieldCheck /> : <BadgeCheck />} {isUncertain ? 'Возможное совпадение' : 'Совпадение найдено'}
-          </Badge>
-          {previewUrl && wine.image_url && <img src={previewUrl} alt="Ваше фото" className="absolute bottom-5 left-5 size-16 rounded-xl object-cover shadow-lg ring-2 ring-white" />}
+          {isManual ? (
+            <Badge className="absolute left-5 top-5 bg-card text-foreground/70 shadow-sm"><Wine /> Из каталога</Badge>
+          ) : (
+            <Badge className={`absolute left-5 top-5 bg-card shadow-sm ${isUncertain ? 'text-amber-800' : 'text-emerald-800'}`}>
+              {isUncertain ? <ShieldCheck /> : <BadgeCheck />} {isUncertain ? 'Возможное совпадение' : 'Совпадение найдено'}
+            </Badge>
+          )}
+          {!isManual && previewUrl && wine.image_url && <img src={previewUrl} alt="Ваше фото" className="absolute bottom-5 left-5 size-16 rounded-xl object-cover shadow-lg ring-2 ring-white" />}
           {meta.confidence !== undefined && <span className="absolute bottom-5 right-5 rounded-full bg-black/60 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur">Уверенность {Math.round(meta.confidence * 100)}%</span>}
         </div>
 
